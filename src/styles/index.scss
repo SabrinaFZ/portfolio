@@ -1,0 +1,127 @@
+@import 'colors';
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body{
+  background-color: $color-black;
+  font-family: 'Raleway', sans-serif;
+}
+
+//Navigation
+.nav-tg{
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  border-bottom: 2px solid $color-grey;
+  border-top: 2px solid $color-grey;
+
+  .flex-column{
+   text-align: center;
+  }
+
+  li{
+    padding: 0px 50px;
+  }
+  a{
+    color: $color-white;
+
+    &:hover{
+      color: $color-black;
+      background-color: $color-grey;
+      border-radius: 2px;
+      font-weight: bold;
+      border-bottom-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+    }
+
+    &:active{
+      color: $color-black;
+      background-color: $color-grey;
+      border-radius: 2px;
+    }
+  }
+
+ }
+
+ h2{
+   border: 1px solid $color-grey;
+   border-radius: 2px;
+   padding: 10px;
+   font-size:20px;
+   color: $color-black;
+   margin-bottom: 30px;
+   text-align: center;
+   background-color: $color-grey-2;
+ }
+
+
+//About me
+#about-me{
+  background-color: $color-grey-2;
+  padding: 20px;
+  border: 1px solid $color-grey;
+  border-radius:2px;
+
+  b{
+    color: $color-black;
+    margin-right:50px;
+  }
+
+  img{
+    border: 1px solid $color-grey;
+    border-radius: 2px;
+  }
+  #accordion{
+    .card-header{
+      background-color: $color-grey;
+      a{
+        color: $color-black;
+        text-decoration: none;
+        &:active{
+          text-decoration: none;
+          font-weight: bold;
+        }
+        &:hover{
+          text-decoration: none;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+#contact{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: $color-grey-2;
+  padding: 20px;
+  border: 1px solid $color-grey;
+  border-radius:2px;
+
+  img{
+    border: 1px solid $color-grey;
+    border-radius:2px;
+    width:20%;
+    height:auto;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+  .box{
+    text-align: center;
+  }
+}
+
+a{
+  color: $color-black;
+  text-decoration: none;
+  &:active{
+    color: $color-black;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  &:hover{
+    color: $color-black;
+    text-decoration: none;
+    font-weight: bold;
+  }
+}

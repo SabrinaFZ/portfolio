@@ -1,0 +1,258 @@
+doctype html
+html(lang="en")
+  head
+    meta(name='description', content='A personal portfolio where you can see a bio about me and my experience')
+    meta(name='keywords', content='Full-Stack Developer, Front-end Developer, Web Design, Desarolladora, Ingenieria Informatica, Madrid')
+    meta(name='author', content='Sabrina Fernandez Zambrano')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css', integrity='sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ', crossorigin='anonymous')
+    script(src='https://code.jquery.com/jquery-3.1.1.slim.min.js', integrity='sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n', crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js', integrity='sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb', crossorigin='anonymous')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js', integrity='sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn', crossorigin='anonymous')
+
+    title Sabrina's Portfolio
+  body
+    .container-fluid
+      .nav-tg
+        ul.nav.nav-justified.nav-pills.flex-column.flex-md-row
+          li.nav-item
+            a.nav-link(href='#') Home
+          li.nav-item
+            a.nav-link(href='#about-me') About Me
+          li.nav-item
+            a.nav-link(href='#contact') Contact
+      .container
+        #about-me
+          h2 About Me
+          .row
+            .col-xs-12.col-sm-12.col-md-2
+              img(src='/img/pic.jpg')
+            .col-xs-12.col-sm-12.col-md-10.col-md-offset-3
+              #accordion(role='tablist', aria-multiselectable='true')
+                .card
+                  #headingOne.card-header(role='tab')
+                    h5.mb-0
+                      a(data-toggle='collapse', data-parent='#accordion', href='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
+                        | BIOGRAPHY
+                  #collapseOne.collapse(role='tabpanel', aria-labelledby='headingOne')
+                    .card-block
+                      table
+                        thead
+                          tr
+                            th
+                            th
+                        tbody
+                          tr
+                            td
+                              b Name:
+                            td
+                              | Sabrina Flena Fernández Zambrano
+                          tr
+                            td
+                              b Birthday:
+                            td
+                              | 03/09/1993
+                          tr
+                            td
+                              b Country of Origin:
+                            td
+                              | Venezuela
+                          tr
+                            td
+                              b Nationality:
+                            td
+                              | Spanish
+                          tr
+                            td
+                              b Address:
+                            td
+                              | 59th Marcelo Gómez Street, 28600, Madrid, Spain.
+                .card
+                  #headingTwo.card-header(role='tab')
+                    h5.mb-0
+                      a.collapsed(data-toggle='collapse', data-parent='#accordion', href='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+                        | STUDIES
+                  #collapseTwo.collapse(role='tabpanel', aria-labelledby='headingTwo')
+                    .card-block
+                      table
+                        thead
+                          th
+                          th
+                        tbody
+                          tr
+                            td
+                              b September 2011 - present
+                            td
+                              | Technical University of Madrid
+                .card
+                  #headingThree.card-header(role='tab')
+                    h5.mb-0
+                      a.collapsed(data-toggle='collapse', data-parent='#accordion', href='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+                        | WORK EXPERIENCE
+                  #collapseThree.collapse(role='tabpanel', aria-labelledby='headingThree')
+                    .card-block
+                      table
+                        thead
+                          th
+                          th
+                        tbody
+                          tr
+                            td
+                              b January 2017 - present
+                            td
+                              | Bridge For Billions
+                          tr
+                            td
+                            td
+                              b Front-end Developer Intern
+                          tr
+                            td
+                            td
+                              | Implementation of their web application in different languages such as HTML, CSS, Javascript,
+                              | Jade, Sass, AngularJS, Django, Python...
+                              br
+                              | Fixing bugs
+                              br
+                              | Testing their web application
+                .card
+                  #headingFour.card-header(role='tab')
+                    h5.mb-0
+                      a.collapsed(data-toggle='collapse', data-parent='#accordion', href='#collapseFour', aria-expanded='false', aria-controls='collapseFour')
+                        | IT SKILLS
+                  #collapseFour.collapse(role='tabpanel', aria-labelledby='headingFour')
+                    .card-block
+                      table
+                        thead
+                          th
+                          th
+                        tbody
+                          tr
+                            td
+                              b Programming Languages
+                          tr
+                            td
+                              | Java, C, SQL, Javascript, jQuery, AngularJS, J2EE
+                          tr
+                            td
+                              b Preprocessors
+                          tr
+                            td
+                              | Jade / Pug, Sass, CoffeeScript
+                          tr
+                            td
+                              b Web
+                          tr
+                            td
+                              | HTML5, CSS3, Bootstrap, Web Services, Grunt, Webpack, Spring Boot
+                          tr
+                            td
+                              b Databases
+                          tr
+                            td
+                              | MySQL
+                          tr
+                            td
+                              b IDEs
+                          tr
+                            td
+                              | Eclipse, Netbeans
+                          tr
+                            td
+                              b Operating Systems
+                          tr
+                            td
+                              | Windows, Linux
+                          tr
+                            td
+                              b Office Programs
+                          tr
+                            td
+                              | Microsoft Office
+                          tr
+                            td
+                              b Version Control
+                          tr
+                            td
+                              | Git
+                .card
+                  #headingFive.card-header(role='tab')
+                    h5.mb-0
+                      a.collapsed(data-toggle='collapse', data-parent='#accordion', href='#collapseFive', aria-expanded='false', aria-controls='collapseFive')
+                        | LANGUAGE SKILLS
+                  #collapseFive.collapse(role='tabpanel', aria-labelledby='headingFive')
+                    .card-block
+                      table
+                        thead
+                          th
+                          th
+                        tbody
+                          tr
+                            td
+                              b Spanish
+                          tr
+                            td
+                            td Native
+                          tr
+                            td
+                              b English
+                          tr
+                            td
+                            td Level B2
+                          tr
+                            td
+                            td First Certificate in English by Cambridge University
+                          tr
+                            td
+                            td September 2016
+                .card
+                  #headingSix.card-header(role='tab')
+                    h5.mb-0
+                      a.collapsed(data-toggle='collapse', data-parent='#accordion', href='#collapseSix', aria-expanded='false', aria-controls='collapseSix')
+                        | FURTHER TRAINING
+                  #collapseSix.collapse(role='tabpanel', aria-labelledby='headingSix')
+                    .card-block
+                      table
+                        thead
+                          th
+                          th
+                        tbody
+                          tr
+                            td
+                              b September 2016 - November 2016
+                            td
+                              | Developing Web Applications in HTML5, CSS and JavaScript, Android and IOS
+                            td MOOC MiriadaX. 50h
+                .card
+                  #headingSeven.card-header(role='tab')
+                    h5.mb-0
+                      a.collapsed(data-toggle='collapse', data-parent='#accordion', href='#collapseSeven', aria-expanded='false', aria-controls='collapseSeven')
+                        | INTERESTS
+                  #collapseSeven.collapse(role='tabpanel', aria-labelledby='headingSeven')
+                    .card-block
+                      | Movies, TV Shows, Music from the 60s, 70s, 80s, Traveling, Japan Culture, Programming and tea
+        #contact
+          h2 Contact
+          .row
+            .col-xs-12.col-sm-12.col-md-4
+              .email.box
+                a(href="mailto:sabrina.fer.zam@gmail.com")
+                  img(src="/img/icons/gmail.png")
+                a(href="mailto:sabrina.fer.zam@gmail.com")
+                  p sabrina.fer.zam@gmail.com
+            .col-xs-12.col-sm-12.col-md-4.col-md-offset-4
+              .telephone.box
+                img(src="/img/icons/tel.png")
+                p +34 646836969
+            .col-xs-12.col-sm-12.col-md-4.col-md-offset-4
+              .linkedin.box
+                a(href="https://github.com/SabrinaFZ")
+                  img(src="/img/icons/linkedin.png")
+                a(href="https://github.com/SabrinaFZ")
+                  p Linkedin
+
+
+
+
+
+
+    script(type='text/javascript', src="app.js").
