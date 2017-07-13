@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "start": "rm -rf dist && npm run build",
-    "build": "webpack -d && webpack-dev-server --content-base src/ --inline --hot --port 1234"
   },
   "repository": {
     "type": "git",
