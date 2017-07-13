@@ -6,3 +6,6 @@ import {createStore} from 'redux'
 require('react-bootstrap')
 import '../styles/index.scss'
 import '../styles/colors.scss'
+
+//images
+import '../../favicon.ico'

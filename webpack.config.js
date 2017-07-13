@@ -32,13 +32,18 @@ module.exports = {
       {
         test:/\.pug$/,
         loader: 'html-loader!pug-html-loader'
+      },
+      {
+        test: /\.(png|svg|ico|jpg|gif)$/,
+        loader: 'file-loader'
       }
     ]
   },
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Portfolio',
-      template: 'src/index.pug'
+      template: 'src/index.pug',
+      favicon: './favicon.ico',
     })
   ]
 
