@@ -7,9 +7,6 @@
     "start": "rm -rf dist && npm run build",
     "build" : "webpack -d && webpack-dev-server --content-base dist/ --inline --hot --port 5000 --host 0.0.0.0"
   },
-  "engines": {
-    "node": "6.2.2"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SabrinaFZ/portfolio.git"
