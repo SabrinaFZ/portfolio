@@ -9,3 +9,9 @@ import '../styles/colors.scss'
 
 //images
 import '../../favicon.ico'
+
+//Connect to Heroku
+const port = process.env.PORT || 8000
+server.listen(port, function() {
+    console.log("App is running on port " + port);
+});

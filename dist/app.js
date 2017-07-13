@@ -18533,7 +18533,7 @@ TabPane.childContextTypes = childContextTypes;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
+/* WEBPACK VAR INJECTION */(function(process) {
 
 var _react = __webpack_require__(0);
 
@@ -18557,6 +18557,14 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 __webpack_require__(332);
 
 //images
+
+
+//Connect to Heroku
+var port = process.env.PORT || 8000;
+server.listen(port, function () {
+    console.log("App is running on port " + port);
+});
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 211 */
