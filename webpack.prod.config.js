@@ -10,9 +10,9 @@ module.exports = {
   },
 
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, '/'),
     filename: '[name].js',
-    publicPath: '/dist'
+    publicPath: '/'
   },
 
   plugins: [
