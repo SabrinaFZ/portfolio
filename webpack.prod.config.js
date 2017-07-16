@@ -21,7 +21,6 @@ module.exports = {
       template: 'src/index.pug',
       favicon: './favicon.ico',
     }),
-    new webpack.optimize.DedupePlugin(),
     new webpack.optimize.UglifyJsPlugin({
       minimize: true,
       compress: {
