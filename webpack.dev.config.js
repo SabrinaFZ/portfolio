@@ -1,38 +1,23 @@
 const path = require('path')
-const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
 
 module.exports = {
-  devtool: 'source-map',
+  devtool: 'eval',
+  //entry point-> requires other modules (root)
+  entry: [
+    'webpack/hot/dev-server',
+    'webpack-hot-middleware/client',
+    './src/js/index.js'
+  ],
 
-  entry: {
-    app:'./src/js/index.js'
-  },
 
+  //ouput point->
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: '[name].js',
+    filename: 'app.js',
     publicPath: '/'
   },
-
-  plugins: [
-    new HtmlWebpackPlugin({
-      title: 'Portfolio',
-      template: 'src/index.pug',
-      favicon: './favicon.ico',
-    }),
-    new webpack.optimize.UglifyJsPlugin({
-      minimize: true,
-      compress: {
-        warnings: false
-      }
-    }),
-    new webpack.DefinePlugin({
-      'process.env': {
-        'NODE_ENV': JSON.stringify('production')
-      }
-    })
-  ],
 
   module:{
     loaders:[
@@ -58,4 +43,14 @@ module.exports = {
       }
     ]
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'Portfolio',
+      template: 'src/index.pug',
+      favicon: './favicon.ico',
+    }),
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoEmitOnErrorsPlugin()
+  ]
+
 }

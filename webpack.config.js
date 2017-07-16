@@ -3,16 +3,15 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = {
-
   //entry point-> requires other modules (root)
   entry: {
-    app:'./src/js/index.js'
+    app: './src/js/index.js'
   },
-
   //ouput point->
   output: {
-    path: path.resolve('./dist'),
-    filename: '[name].js'
+    path: path.join(__dirname, 'dist'),
+    filename: 'app.js',
+    publicPath: '/'
   },
 
   module:{
@@ -44,7 +43,9 @@ module.exports = {
       title: 'Portfolio',
       template: 'src/index.pug',
       favicon: './favicon.ico',
-    })
+    }),
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoEmitOnErrorsPlugin()
   ]
 
 }
