@@ -10,8 +10,8 @@ module.exports = {
   },
 
   output: {
-    path: path.join(__dirname, '/'),
-    filename: '[name].js',
+    path: path.join(__dirname, 'dist'),
+    filename: 'app.js',
     publicPath: '/'
   },
 
