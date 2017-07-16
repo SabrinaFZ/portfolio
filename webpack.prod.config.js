@@ -12,7 +12,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'app.js',
-    publicPath: 'https://portfolio-sabrina.herokuapp.com/'
+
   },
 
   plugins: [
@@ -54,7 +54,7 @@ module.exports = {
       },
       {
         test: /\.(png|svg|ico|jpg|gif)$/,
-        loader: 'file-loader?name=/img/[name].[ext]'
+        loader: 'file-loader?name=[name].[hash].[ext]&outputPath=images/'
       }
     ]
   },
