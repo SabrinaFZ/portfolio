@@ -11,7 +11,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'app.js',
-    publicPath: '/'
+    publicPath: 'http://localhost:8081/'
   },
 
   module:{
@@ -34,7 +34,7 @@ module.exports = {
       },
       {
         test: /\.(png|svg|ico|jpg|gif)$/,
-        loader: 'file-loader?name=/img/[name].[ext]'
+        loader: 'file-loader?name=/img/[name].[ext]',
       }
     ]
   },
