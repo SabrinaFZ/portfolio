@@ -13,5 +13,3 @@ import '../img/icons/gmail.png'
 import '../img/icons/linkedin.png'
 import '../img/icons/tel.png'
 import '../../favicon.ico'
-
-//Connect to Heroku
