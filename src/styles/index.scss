@@ -2,129 +2,73 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
 body{
-  background-color: $color-black;
+  background-color: #232526;  /* fallback for old browsers */
+  background-color: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+  background-color: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   font-family: 'Raleway', sans-serif;
+  padding-top: 70px;
 }
 
-//Navigation
-.nav-tg{
-  margin: 0 auto;
-  margin-top: 50px;
-  margin-bottom: 80px;
-  border-bottom: 2px solid $color-grey;
-  border-top: 2px solid $color-grey;
-
-  .flex-column{
-   text-align: center;
+nav{
+  a {
+    color :#ECE9E6;
+    text-align: center;
   }
-
-  li{
-    padding: 0px 50px;
-  }
-  a{
-    color: $color-white;
-
-    &:hover{
-      color: $color-black;
-      background-color: $color-grey;
-      border-radius: 2px;
-      font-weight: bold;
-      border-bottom-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-    }
-
-    &:active{
-      color: $color-black;
-      background-color: $color-grey;
-      border-radius: 2px;
+  ul{
+    width: 100%;
+    li{
+      width: 50%;
     }
   }
-
- }
-
- h2{
-   border: 1px solid $color-grey;
-   border-radius: 2px;
-   padding: 10px;
-   font-size:20px;
-   color: $color-black;
-   margin-bottom: 30px;
-   text-align: center;
-   background-color: $color-grey-2;
- }
-
-
-//About me
-#about-me{
-  background-color: $color-grey-2;
-  padding: 20px;
-  border: 1px solid $color-grey;
-  border-radius:2px;
-
-  b{
-    color: $color-black;
-    margin-right:50px;
+  .navbar-brand{
+    display: none;
+    float: none;
   }
+}
 
-  img{
-    border: 1px solid $color-grey;
-    border-radius: 2px;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 20px;
-  }
-  #accordion{
-    .card-header{
-      background-color: $color-grey;
-      a{
-        color: $color-black;
-        text-decoration: none;
-        &:active{
-          text-decoration: none;
-          font-weight: bold;
-        }
-        &:hover{
-          text-decoration: none;
-          font-weight: bold;
-        }
+.navbar-custom{
+  background-color: #414345;
+}
+
+.container{
+  color: #ECE9E6;
+}
+
+@media(max-width: 767px){
+  nav{
+    a{
+      color: #414345; 
+    }
+    ul{
+      width: 100%;
+      li{
+        margin: 0 auto;
+        width: 50%;
+      }
+    }
+    #navbar{
+      background-color: #ECE9E6;  /* fallback for old browsers */
+      background-color: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+      background-color: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    .navbar-nav{
+      margin: 0;
+    }
+    .navbar-brand{
+      display: block;
+      color: #ECE9E6;
+      width: 80%;
+      margin: 0 auto;
+    }
+    .navbar-toggle{
+      background-color: #ECE9E6;
+      span{
+        background-color: #414345;
       }
     }
   }
 }
 
-#contact{
-  margin-top: 30px;
-  margin-bottom: 30px;
-  background-color: $color-grey-2;
-  padding: 20px;
-  border: 1px solid $color-grey;
-  border-radius:2px;
 
-  img{
-    border: 1px solid $color-grey;
-    border-radius:2px;
-    width:20%;
-    height:auto;
-    margin-bottom: 10px;
-    padding: 10px;
-  }
 
-  .box{
-    text-align: center;
-  }
-}
 
-a{
-  color: $color-black;
-  text-decoration: none;
-  &:active{
-    color: $color-black;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  &:hover{
-    color: $color-black;
-    text-decoration: none;
-    font-weight: bold;
-  }
-}
