@@ -10,6 +10,7 @@ html(lang="en")
     link(rel="stylesheet", type="text/css", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
     script(src='https://code.jquery.com/jquery-3.1.1.slim.min.js', integrity='sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n', crossorigin='anonymous')
     script(type="text/javascript", src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+    script(defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js")
 
     title Sabrina's Portfolio
     body
@@ -38,7 +39,8 @@ html(lang="en")
           #about-info.panel-group
             .panel.panel-default
               .panel-title
-                a.about-title(data-toggle='collapse' data-parent='#about-info' href='#biography') BIOGRAPHY
+                i.fas.fa-child.fas-left 
+                a.about-title(data-toggle='collapse' data-parent='#about-info' href='#biography') BIOGRAPHY  
               div#biography.about-body.panel-collapse.collapse
                 ul
                   li 
@@ -55,6 +57,7 @@ html(lang="en")
                     p.about-text MADRID, SPAIN
             .panel.panel-default
               .panel-title
+                i.class.fas.fa-briefcase.fas-left
                 a.about-title(data-toggle='collapse' data-parent='#about-info' href='#work') WORK EXPERIENCE
               div#work.about-body.panel-collapse.collapse
                 ul
@@ -69,6 +72,7 @@ html(lang="en")
                         li TESTING
             .panel.panel-default
               .panel-title
+                i.fas.fa-graduation-cap.fas-left
                 a.about-title(data-toggle='collapse' data-parent='#about-info' href='#studies') STUDIES
               div#studies.about-body.panel-collapse.collapse
                 ul
@@ -78,6 +82,7 @@ html(lang="en")
                     p.about-text 09/2011 - 01/2018
             .panel.panel-default
               .panel-title
+                i.fas.fa-code.fas-left
                 a.about-title(data-toggle='collapse' data-parent='#about-info' href='#it-skills') IT SKILLS
               div#it-skills.about-body.panel-collapse.collapse
                 ul
@@ -104,6 +109,7 @@ html(lang="en")
                     p.about-text HEROKU, WEBPACK, GRUNT, SPRING BOOT, NODEJS
             .panel.panel-default
               .panel-title
+                i.fas.fa-language.fas-left
                 a.about-title(data-toggle='collapse' data-parent='#about-info' href='#languages') LANGUAGE SKILLS
               div#languages.about-body.panel-collapse.collapse
                 ul
@@ -117,6 +123,7 @@ html(lang="en")
                     p.about-text 09/2016
             .panel.panel-default
               .panel-title
+                i.fas.fa-book.fas-left
                 a.about-title(data-toggle='collapse' data-parent='#about-info' href='#further-training') FURTHER TRAINING
               div#further-training.about-body.panel-collapse.collapse
                 ul
@@ -130,6 +137,7 @@ html(lang="en")
                     p.about-text MIRIADAX
             .panel.panel-default
               .panel-title
+                i.fas.fa-folder-open.fas-left
                 a.about-title(data-toggle='collapse' data-parent='#about-info' href='#personal-projects') PERSONAL PROJECTS
               div#personal-projects.about-body.panel-collapse.collapse
                 ul
@@ -148,15 +156,15 @@ html(lang="en")
               li
                 p 
                   a(href="mailto:sabrina.fer.zam@gmail.com" target="_top") 
-                    img(src="./img/icons/gmail.png") 
+                    img(src="./img/icons/mail.svg") 
                   a(href="mailto:sabrina.fer.zam@gmail.com" target="_top") EMAIL
               li
                 p 
                   a(href="https://www.linkedin.com/in/sabrina-fern%C3%A1ndez-zambrano-46a2a3125/")
-                    img(src="./img/icons/linkedin.png") 
+                    img(src="./img/icons/linkedin.svg") 
                   a(href="https://www.linkedin.com/in/sabrina-fern%C3%A1ndez-zambrano-46a2a3125/") LINKEDIN
               li
                 p 
                   a(href="https://github.com/SabrinaFZ")
-                    img(src="./img/icons/github.png")  
+                    img(src="./img/icons/github.svg")  
                   a(href="https://github.com/SabrinaFZ") GITHUB

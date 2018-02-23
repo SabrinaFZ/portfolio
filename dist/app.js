@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "9807213d3e48bd4b37fa"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "063f6c6c3ab8d7990e45"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -722,19 +722,19 @@
 /******/ 	__webpack_require__.h = function() { return hotCurrentHash; };
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return hotCreateRequire(4)(__webpack_require__.s = 4);
+/******/ 	return hotCreateRequire(1)(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(2)(false);
+exports = module.exports = __webpack_require__(3)(false);
 // imports
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Raleway);", ""]);
 
 // module
-exports.push([module.i, "body {\n  background-color: #232526;\n  /* fallback for old browsers */\n  background-color: -webkit-linear-gradient(to right, #414345, #232526);\n  /* Chrome 10-25, Safari 5.1-6 */\n  background-color: linear-gradient(to right, #414345, #232526);\n  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */\n  font-family: 'Raleway', sans-serif;\n  padding-top: 70px;\n  color: #ECE9E6; }\n\nnav a {\n  color: #ECE9E6;\n  text-align: center; }\n\nnav ul {\n  width: 100%; }\n  nav ul li {\n    width: 50%; }\n\nnav .navbar-brand {\n  display: none;\n  float: none; }\n\nul {\n  list-style: none;\n  padding: 0px; }\n\n#about {\n  width: 50%;\n  margin: 50px auto; }\n  #about #about-picture {\n    float: left; }\n  #about #about-info {\n    width: 90%;\n    float: right; }\n  #about .about-label {\n    font-weight: bold;\n    color: #414345;\n    padding: 0px;\n    margin-bottom: 5px;\n    font-size: 14px; }\n  #about .about-text {\n    padding-left: 10px;\n    font-size: 12px; }\n\n.navbar-custom {\n  background-color: #414345; }\n\n.panel {\n  text-align: center;\n  background-color: #414345; }\n  .panel .panel-title {\n    padding: 10px 15px; }\n    .panel .panel-title .about-title {\n      text-decoration: none;\n      text-align: center; }\n  .panel .about-body {\n    background-color: #ECE9E6;\n    color: #414345;\n    text-align: left;\n    padding: 15px 15px;\n    transition: 0.2s linear; }\n\n.panel-default {\n  border: none; }\n\n@media (max-width: 767px) {\n  nav a {\n    color: #414345; }\n  nav ul {\n    width: 100%; }\n    nav ul li {\n      margin: 0 auto;\n      width: 50%; }\n  nav #navbar {\n    background-color: #ECE9E6;\n    /* fallback for old browsers */\n    background-color: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);\n    /* Chrome 10-25, Safari 5.1-6 */\n    background-color: linear-gradient(to right, #FFFFFF, #ECE9E6);\n    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }\n  nav .navbar-nav {\n    margin: 0; }\n  nav .navbar-brand {\n    display: block;\n    color: #ECE9E6;\n    width: 80%;\n    margin: 0 auto; }\n  nav .navbar-toggle {\n    background-color: #ECE9E6; }\n    nav .navbar-toggle span {\n      background-color: #414345; }\n  #about {\n    width: 100%;\n    margin: 0px auto; }\n    #about #about-picture {\n      display: block;\n      float: none; }\n      #about #about-picture img {\n        margin: 10px auto; }\n    #about #about-info {\n      float: none;\n      width: 100%; } }\n\n@media (min-width: 768px) and (max-width: 1024px), (min-width: 1025px) and (max-width: 1280px) {\n  #about {\n    width: 100%;\n    margin: 0px auto; }\n    #about #about-picture {\n      display: block;\n      float: none; }\n      #about #about-picture img {\n        margin: 10px auto; }\n    #about #about-info {\n      float: none;\n      width: 100%; }\n  .panel {\n    text-align: center;\n    background-color: #414345; }\n    .panel .panel-title {\n      padding: 20px 15px; }\n  .panel-default {\n    margin-top: 10px; } }\n", ""]);
+exports.push([module.i, "@keyframes bounce {\n  0%, 100%, 20%, 50%, 80% {\n    -webkit-transform: translateY(0);\n    -ms-transform: translateY(0);\n    transform: translateY(0); }\n  40% {\n    -webkit-transform: translateY(-30px);\n    -ms-transform: translateY(-30px);\n    transform: translateY(-30px); }\n  60% {\n    -webkit-transform: translateY(-15px);\n    -ms-transform: translateY(-15px);\n    transform: translateY(-15px); } }\n\nbody {\n  background-color: #232526;\n  /* fallback for old browsers */\n  background-color: -webkit-linear-gradient(to right, #414345, #232526);\n  /* Chrome 10-25, Safari 5.1-6 */\n  background-color: linear-gradient(to right, #414345, #232526);\n  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */\n  font-family: 'Raleway', sans-serif;\n  padding-top: 70px;\n  color: #ECE9E6; }\n\nnav a {\n  color: #ECE9E6;\n  text-align: center; }\n\nnav a:hover {\n  color: #414345;\n  font-weight: bold; }\n\nnav ul {\n  width: 100%; }\n  nav ul li {\n    width: 50%; }\n\nnav .navbar-brand {\n  display: none;\n  float: none; }\n\nul {\n  list-style: none;\n  padding: 0px; }\n\n#about {\n  width: 50%;\n  margin: 50px auto; }\n  #about #about-picture {\n    float: left; }\n  #about #about-info {\n    width: 90%;\n    float: right; }\n  #about .about-label {\n    font-weight: bold;\n    color: #414345;\n    padding: 0px;\n    margin-bottom: 5px;\n    font-size: 16px; }\n  #about .about-text {\n    padding-left: 10px;\n    font-size: 14px; }\n\n#contact {\n  width: 51%;\n  margin: 400px auto; }\n  #contact #contact-items ul {\n    background-color: #414345; }\n    #contact #contact-items ul li {\n      float: left;\n      width: 32.3%;\n      background-color: #414345;\n      border-radius: 4px;\n      margin-right: 1%;\n      margin-bottom: 20px; }\n      #contact #contact-items ul li p {\n        text-align: center;\n        padding: 10px;\n        margin-bottom: 0px; }\n        #contact #contact-items ul li p a {\n          color: #ECE9E6; }\n        #contact #contact-items ul li p a:hover {\n          text-decoration: none;\n          font-weight: bold; }\n        #contact #contact-items ul li p img {\n          cursor: pointer;\n          display: block;\n          margin: 0 auto;\n          margin-bottom: 5px;\n          width: 20%; }\n    #contact #contact-items ul li:hover {\n      opacity: 0.8; }\n\n.thumbnail {\n  border: 0.5px solid #ECE9E6;\n  background-color: transparent; }\n\n.nav li a:hover {\n  opacity: 0.8;\n  font-weight: bold; }\n\n.navbar-custom {\n  background-color: #414345; }\n\n.panel {\n  text-align: center;\n  background-color: #414345; }\n  .panel .fas-left {\n    float: left;\n    -webkit-animation-duration: 1s;\n    animation-duration: 1s;\n    -webkit-animation-fill-mode: both;\n    animation-fill-mode: both;\n    -webkit-animation-timing-function: ease-in-out;\n    animation-timing-function: ease-in-out; }\n  .panel .panel-title {\n    padding: 10px 15px; }\n    .panel .panel-title .about-title {\n      text-decoration: none;\n      text-align: center; }\n  .panel .about-body {\n    background-color: #ECE9E6;\n    color: #414345;\n    text-align: left;\n    padding: 15px 15px; }\n\n.panel:hover {\n  opacity: 0.8; }\n  .panel:hover .fas-left {\n    animation-name: bounce;\n    -moz-animation-name: bounce; }\n\n.panel-default {\n  border: none; }\n\n@media (max-width: 767px) {\n  nav a {\n    color: #414345; }\n  nav ul {\n    width: 100%; }\n    nav ul li {\n      margin: 0 auto;\n      width: 50%; }\n  nav #navbar {\n    background-color: #ECE9E6;\n    /* fallback for old browsers */\n    background-color: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);\n    /* Chrome 10-25, Safari 5.1-6 */\n    background-color: linear-gradient(to right, #FFFFFF, #ECE9E6);\n    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }\n  nav .navbar-nav {\n    margin: 0; }\n  nav .navbar-brand {\n    display: block;\n    color: #ECE9E6;\n    width: 80%;\n    margin: 0 auto; }\n  nav .navbar-toggle {\n    background-color: #ECE9E6; }\n    nav .navbar-toggle span {\n      background-color: #414345; }\n  #about {\n    width: 100%;\n    margin: 0px auto; }\n    #about #about-picture {\n      display: block;\n      float: none; }\n      #about #about-picture img {\n        margin: 10px auto; }\n    #about #about-info {\n      float: none;\n      width: 100%; }\n  #contact {\n    width: 101%; }\n    #contact #contact-items ul li p img {\n      width: 50%; } }\n\n@media (min-width: 768px) and (max-width: 1024px), (min-width: 1025px) and (max-width: 1280px) {\n  #about {\n    width: 100%;\n    margin: 0px auto; }\n    #about #about-picture {\n      display: block;\n      float: none; }\n      #about #about-picture img {\n        margin: 10px auto; }\n    #about #about-info {\n      float: none;\n      width: 100%; }\n  .panel {\n    text-align: center;\n    background-color: #414345; }\n    .panel .panel-title {\n      padding: 20px 15px; }\n  .panel-default {\n    margin-top: 10px; }\n  #contact {\n    width: 101%; } }\n", ""]);
 
 // exports
 
@@ -743,18 +743,54 @@ exports.push([module.i, "body {\n  background-color: #232526;\n  /* fallback for
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(2)(false);
-// imports
+"use strict";
 
 
-// module
-exports.push([module.i, "", ""]);
+__webpack_require__(2);
 
-// exports
+__webpack_require__(6);
 
+__webpack_require__(7);
+
+__webpack_require__(8);
+
+__webpack_require__(9);
+
+__webpack_require__(10);
 
 /***/ }),
 /* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(0);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(4)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(true) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept(0, function() {
+			var newContent = __webpack_require__(0);
+			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 3 */
 /***/ (function(module, exports) {
 
 /*
@@ -836,7 +872,7 @@ function toComment(sourceMap) {
 
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -882,7 +918,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(6);
+var	fixUrls = __webpack_require__(5);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -1195,59 +1231,7 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 4 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-__webpack_require__(5);
-
-__webpack_require__(7);
-
-__webpack_require__(8);
-
-__webpack_require__(9);
-
-__webpack_require__(10);
-
-__webpack_require__(11);
-
-__webpack_require__(12);
-
-/***/ }),
 /* 5 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(0);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
-
-var options = {}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__(3)(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(true) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept(0, function() {
-			var newContent = __webpack_require__(0);
-			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 6 */
 /***/ (function(module, exports) {
 
 
@@ -1342,62 +1326,31 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 7 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(1);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
-
-var options = {}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__(3)(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(true) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept(1, function() {
-			var newContent = __webpack_require__(1);
-			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 8 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/pic.7c236c28222c0baab12c08a23b6b871f.jpg";
 
 /***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "images/mail.b96b26dcb5d7c4cceb9cea31ac4a66dc.svg";
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "images/linkedin.c66f7c8ee5ef38516618e5eb3e56a2fb.svg";
+
+/***/ }),
 /* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/gmail.d1abc361683daa1f599c010fca8cc9cc.png";
+module.exports = __webpack_require__.p + "images/github.a4571e015c920787be52124db23862ba.svg";
 
 /***/ }),
 /* 10 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/linkedin.94c7faab7a5377b7edece6f563079670.png";
-
-/***/ }),
-/* 11 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/tel.688c20152d4628bfa4374cecc0587db0.png";
-
-/***/ }),
-/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/favicon.daa51e18de507ccd89fe2029e5d45362.ico";
