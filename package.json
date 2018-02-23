@@ -6,7 +6,7 @@
   "scripts": {
     "build": "NODE_ENV=production webpack --config ./webpack.prod.config.js --progress --colors",
     "start": "node ./src/js/app.js",
-    "dev": "rm -rf dist && webpack --config ./webpack.config.js && webpack-dev-server --inline --hot"
+    "dev": "webpack --config ./webpack.config.js && webpack-dev-server --inline --hot"
   },
   "repository": {
     "type": "git",

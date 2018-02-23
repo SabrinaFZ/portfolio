@@ -1,10 +1,9 @@
 //Styles
 import '../styles/index.scss'
-import '../styles/colors.scss'
 
 //images
 import '../img/pic.jpg'
-import '../img/icons/gmail.png'
-import '../img/icons/linkedin.png'
-import '../img/icons/tel.png'
+import '../img/icons/mail.svg'
+import '../img/icons/linkedin.svg'
+import '../img/icons/github.svg'
 import '../../favicon.ico'

@@ -1,130 +1,302 @@
-@import 'colors';
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
-body{
-  background-color: $color-black;
-  font-family: 'Raleway', sans-serif;
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-30px);
+		-ms-transform:     translateY(-30px);
+		transform:         translateY(-30px)
+	}
+	60% {
+		-webkit-transform: translateY(-15px);
+		-ms-transform:     translateY(-15px);
+		transform:         translateY(-15px)
+	}
 }
 
-//Navigation
-.nav-tg{
-  margin: 0 auto;
-  margin-top: 50px;
-  margin-bottom: 80px;
-  border-bottom: 2px solid $color-grey;
-  border-top: 2px solid $color-grey;
+body{
+  background-color: #232526;  /* fallback for old browsers */
+  background-color: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+  background-color: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Raleway', sans-serif;
+  padding-top: 70px;
+  color: #ECE9E6;
+}
 
-  .flex-column{
-   text-align: center;
+nav{
+  a {
+    color :#ECE9E6;
+    text-align: center;
   }
-
-  li{
-    padding: 0px 50px;
+  a:hover{
+    color: #414345;
+    font-weight: bold;
   }
-  a{
-    color: $color-white;
-
-    &:hover{
-      color: $color-black;
-      background-color: $color-grey;
-      border-radius: 2px;
-      font-weight: bold;
-      border-bottom-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-    }
-
-    &:active{
-      color: $color-black;
-      background-color: $color-grey;
-      border-radius: 2px;
+  ul{
+    width: 100%;
+    li{
+      width: 50%;
     }
   }
+  .navbar-brand{
+    display: none;
+    float: none;
+  }
+}
 
- }
-
- h2{
-   border: 1px solid $color-grey;
-   border-radius: 2px;
-   padding: 10px;
-   font-size:20px;
-   color: $color-black;
-   margin-bottom: 30px;
-   text-align: center;
-   background-color: $color-grey-2;
- }
+ul{
+  list-style: none;
+  padding: 0px;
+}
 
 
-//About me
-#about-me{
-  background-color: $color-grey-2;
-  padding: 20px;
-  border: 1px solid $color-grey;
-  border-radius:2px;
+#about{
+  width: 50%;
+  margin: 50px auto;
 
-  b{
-    color: $color-black;
-    margin-right:50px;
+  #about-picture{
+    float:left;
   }
 
-  img{
-    border: 1px solid $color-grey;
-    border-radius: 2px;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 20px;
+  #about-info{
+    width: 90%;
+    float:right;
   }
-  #accordion{
-    .card-header{
-      background-color: $color-grey;
-      a{
-        color: $color-black;
-        text-decoration: none;
-        &:active{
-          text-decoration: none;
-          font-weight: bold;
+
+  .about-label{
+    font-weight: bold;
+    color:  #414345;
+    padding: 0px;
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+
+  .about-text{
+    padding-left: 10px;
+    font-size: 14px;
+  }
+
+  
+}
+
+#contact{
+  width: 51%;
+  margin: 400px auto;
+  #contact-items{
+    ul{
+      background-color: #414345;
+      li{
+        float:left;
+        width: 32.3%;
+        background-color: #414345;
+        border-radius: 4px;
+        margin-right: 1%;
+        margin-bottom: 20px;
+        p{
+          text-align:center;
+          padding: 10px;
+          margin-bottom: 0px;
+          a{
+            color: #ECE9E6;
+          }
+          a:hover{
+            text-decoration: none;
+            font-weight: bold;
+          }
+          img{
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 5px;
+            width: 20%;
+          }
         }
-        &:hover{
-          text-decoration: none;
-          font-weight: bold;
-        }
+      }
+      li:hover{
+        opacity: 0.8;
       }
     }
   }
 }
 
-#contact{
-  margin-top: 30px;
-  margin-bottom: 30px;
-  background-color: $color-grey-2;
-  padding: 20px;
-  border: 1px solid $color-grey;
-  border-radius:2px;
-
-  img{
-    border: 1px solid $color-grey;
-    border-radius:2px;
-    width:20%;
-    height:auto;
-    margin-bottom: 10px;
-    padding: 10px;
+.thumbnail{
+    border: 0.5px solid #ECE9E6;
+    background-color: transparent;
   }
 
-  .box{
-    text-align: center;
+.nav{
+  li{
+    a:hover{
+        opacity: 0.8;
+        font-weight: bold;
+      }
   }
 }
 
-a{
-  color: $color-black;
-  text-decoration: none;
-  &:active{
-    color: $color-black;
-    text-decoration: none;
-    font-weight: bold;
+.navbar-custom{
+  background-color: #414345;
+}
+
+.panel{
+  text-align: center;
+  background-color: #414345;
+
+  .fas-left{
+    float:left;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
   }
-  &:hover{
-    color: $color-black;
-    text-decoration: none;
-    font-weight: bold;
+
+  .panel-title{
+    padding: 10px 15px;
+
+    .about-title{
+      text-decoration: none;
+      text-align: center;
+    }
+  }
+
+  .about-body{
+      background-color: #ECE9E6;
+      color: #414345;
+      text-align: left;
+      padding: 15px 15px;
+      
   }
 }
+
+.panel:hover{
+  opacity: 0.8;
+  .fas-left{
+    animation-name: bounce;
+    -moz-animation-name: bounce;
+  }
+}
+
+.panel-default{
+  border: none;
+}
+
+//Mobiles
+@media(max-width: 767px){
+  nav{
+    a{
+      color: #414345; 
+    }
+    ul{
+      width: 100%;
+      li{
+        margin: 0 auto;
+        width: 50%;
+      }
+    }
+    #navbar{
+      background-color: #ECE9E6;  /* fallback for old browsers */
+      background-color: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+      background-color: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    .navbar-nav{
+      margin: 0;
+    }
+    .navbar-brand{
+      display: block;
+      color: #ECE9E6;
+      width: 80%;
+      margin: 0 auto;
+    }
+    .navbar-toggle{
+      background-color: #ECE9E6;
+      span{
+        background-color: #414345;
+      }
+    }
+  }
+  #about{
+    width: 100%;
+    margin: 0px auto;
+
+    #about-picture{
+      display:block;
+      float: none;
+      img{
+        margin: 10px auto;
+      }
+    }
+
+    #about-info{
+      float: none;
+      width: 100%;
+    }
+  }
+
+  #contact{
+    width: 101%;
+  #contact-items{
+    ul{
+      li{
+        p{
+          img{
+            width: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+//Tablets
+@media (min-width: 768px) and (max-width: 1024px), (min-width: 1025px) and (max-width: 1280px){
+  #about{
+  width: 100%;
+  margin: 0px auto;
+
+    #about-picture{
+      display:block;
+      float: none;
+      img{
+        margin: 10px auto;
+      }
+    }
+
+    #about-info{
+      float: none;
+      width: 100%;
+    }
+  }
+
+  .panel{
+  text-align: center;
+  background-color: #414345;
+
+    .panel-title{
+      padding: 20px 15px;
+    }
+  }
+
+  .panel-default{
+    margin-top: 10px;
+  }
+
+  #contact{
+    width: 101%;
+  }
+}
+
+
+
+
+
+
+
+
+
