@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "063f6c6c3ab8d7990e45"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "23286ab27b244eab5c43"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -1335,19 +1335,19 @@ module.exports = __webpack_require__.p + "images/pic.7c236c28222c0baab12c08a23b6
 /* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/mail.b96b26dcb5d7c4cceb9cea31ac4a66dc.svg";
+module.exports = __webpack_require__.p + "images/mail.1929839fa0498fd692f4090b69c593a9.svg";
 
 /***/ }),
 /* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/linkedin.c66f7c8ee5ef38516618e5eb3e56a2fb.svg";
+module.exports = __webpack_require__.p + "images/linkedin.1930e78f7457f315fb58ed70a4725f23.svg";
 
 /***/ }),
 /* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/github.a4571e015c920787be52124db23862ba.svg";
+module.exports = __webpack_require__.p + "images/github.c35ef0ddec1d17ee4c2dfefa8c2a3b6c.svg";
 
 /***/ }),
 /* 10 */
