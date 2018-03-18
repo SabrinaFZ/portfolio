@@ -1,5 +1,5 @@
 //Styles
-import '../styles/index.scss'
+import '../stylesheets/main.scss'
 
 //images
 import '../img/pic.jpg'

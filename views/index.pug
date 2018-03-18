@@ -8,11 +8,13 @@ html(lang="en")
     link(rel='shortcut icon', href='./favicon.ico', type='image/x-icon')
     link(rel="stylesheet", type="text/css", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
     link(rel="stylesheet", type="text/css", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
+    link(rel="stylesheet", type="text/css", href="/stylesheets/style.css")
+    link(href="/style.css", rel="stylesheet", type="text/css")
     script(src='https://code.jquery.com/jquery-3.1.1.slim.min.js', integrity='sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n', crossorigin='anonymous')
     script(type="text/javascript", src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
     script(defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js")
 
-    title Sabrina's Portfolio
+    title
     body
       nav.navbar.navbar-custom.navbar-fixed-top
         .container
@@ -61,6 +63,14 @@ html(lang="en")
                 a.about-title(data-toggle='collapse' data-parent='#about-info' href='#work') WORK EXPERIENCE
               div#work.about-body.panel-collapse.collapse
                 ul
+                  li
+                    p.about-label FRONT-END DEVELOPER
+                    p.about-text AMARIS
+                    p.about-text 01/2018 - PRESENT
+                    p
+                      ul.about-text
+                        li DEVELOPING WEB APPLICATIONS WITH HTML, CSS, JAVASCRIPT, DUST, STYLUS, BACKBONE, MARIONETTE, JAVA, JENKINS
+                        li FIXING BUGS
                   li
                     p.about-label FRONT-END DEVELOPER INTERN
                     p.about-text BRIDGE FOR BILLIONS
@@ -128,12 +138,16 @@ html(lang="en")
               div#further-training.about-body.panel-collapse.collapse
                 ul
                   li
-                    p.about-label DEVELOPING WEB APPLICATIONS IN HTML5, CSS3, JAVASCRIPT, ANDROID AND IOS
-                    p.about-text 09/2016 - 11/2016
-                    p.about-text MIRIADAX
+                    p.about-label THE WEB DEVELOPER BOOTCAMP
+                    p.about-text 03/2018
+                    p.about-text UDEMY
                   li
                     p.about-label SOFTWARE MANAGEMENT WITH GIT AND GITHUB
                     p.about-text 02/2018
+                    p.about-text MIRIADAX
+                  li
+                    p.about-label DEVELOPING WEB APPLICATIONS IN HTML5, CSS3, JAVASCRIPT, ANDROID AND IOS
+                    p.about-text 09/2016 - 11/2016
                     p.about-text MIRIADAX
             .panel.panel-default
               .panel-title
