@@ -18,22 +18,26 @@
 	}
 }
 
+$white: #ECE9E6;
+$light-black: #414345;
+$dark-black: #232526;
+
 body{
-  background-color: #232526;  /* fallback for old browsers */
-  background-color: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-  background-color: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: $dark-black; 
+  background-color: -webkit-linear-gradient(to right, $light-black, $dark-black);
+  background-color: linear-gradient(to right, $light-black, $dark-black); 
   font-family: 'Raleway', sans-serif;
   padding-top: 70px;
-  color: #ECE9E6;
+  color: $white;
 }
 
 nav{
   a {
-    color :#ECE9E6;
+    color :$white;
     text-align: center;
   }
   a:hover{
-    color: #414345;
+    color: $light-black;
     font-weight: bold;
   }
   ul{
@@ -69,7 +73,7 @@ ul{
 
   .about-label{
     font-weight: bold;
-    color:  #414345;
+    color:  $light-black;
     padding: 0px;
     margin-bottom: 5px;
     font-size: 16px;
@@ -88,11 +92,11 @@ ul{
   margin: 400px auto;
   #contact-items{
     ul{
-      background-color: #414345;
+      background-color: $light-black;
       li{
         float:left;
         width: 32.3%;
-        background-color: #414345;
+        background-color: $light-black;
         border-radius: 4px;
         margin-right: 1%;
         margin-bottom: 20px;
@@ -101,7 +105,7 @@ ul{
           padding: 10px;
           margin-bottom: 0px;
           a{
-            color: #ECE9E6;
+            color: $white;
           }
           a:hover{
             text-decoration: none;
@@ -124,7 +128,7 @@ ul{
 }
 
 .thumbnail{
-    border: 0.5px solid #ECE9E6;
+    border: 0.5px solid $white;
     background-color: transparent;
   }
 
@@ -138,12 +142,12 @@ ul{
 }
 
 .navbar-custom{
-  background-color: #414345;
+  background-color: $light-black;
 }
 
 .panel{
   text-align: center;
-  background-color: #414345;
+  background-color: $light-black;
 
   .fas-left{
     float:left;
@@ -165,8 +169,8 @@ ul{
   }
 
   .about-body{
-      background-color: #ECE9E6;
-      color: #414345;
+      background-color: $white;
+      color: $light-black;
       text-align: left;
       padding: 15px 15px;
       
@@ -189,7 +193,7 @@ ul{
 @media(max-width: 767px){
   nav{
     a{
-      color: #414345; 
+      color: $light-black; 
     }
     ul{
       width: 100%;
@@ -199,9 +203,9 @@ ul{
       }
     }
     #navbar{
-      background-color: #ECE9E6;  /* fallback for old browsers */
-      background-color: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
-      background-color: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      background-color: $white;  /* fallback for old browsers */
+      background-color: -webkit-linear-gradient(to right, #FFFFFF, $white);  /* Chrome 10-25, Safari 5.1-6 */
+      background-color: linear-gradient(to right, #FFFFFF, $white); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     }
     .navbar-nav{
       margin: 0;
@@ -213,9 +217,9 @@ ul{
       margin: 0 auto;
     }
     .navbar-toggle{
-      background-color: #ECE9E6;
+      background-color: $white;
       span{
-        background-color: #414345;
+        background-color: $light-black;
       }
     }
   }
@@ -276,7 +280,7 @@ ul{
 
   .panel{
   text-align: center;
-  background-color: #414345;
+  background-color: $light-black;
 
     .panel-title{
       padding: 20px 15px;
