@@ -1,5 +1,6 @@
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const webpack = require('webpack');
 
 module.exports = {
     module: {
@@ -52,6 +53,14 @@ module.exports = {
                 query: {
                     name: 'assets/fonts/[name].[ext]'
                 }
+            },
+            {
+                test: /bootstrap\/dist\/js\/umd\//, 
+                loader: 'imports?jQuery=jquery'
+            },
+            {
+                test: /\.css$/, 
+                use: ['css-loader']
             }
         ]
     },
@@ -65,6 +74,10 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: "[name].css",
             chunkFilename: "[id].css"
+        }),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery'
         })
     ]
 }
