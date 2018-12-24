@@ -5,11 +5,10 @@ html(lang="en")
     meta(name='keywords', content='Full-Stack Developer, Front-end Developer, Web Design, Desarolladora, Ingenieria Informatica, Madrid')
     meta(name='author', content='Sabrina Fernandez Zambrano')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    link(rel='shortcut icon', href='./img/favicon.ico', type='image/x-icon')
+    link(rel='shortcut icon', href='./assets/img/favicon.ico', type='image/x-icon')
     link(rel="stylesheet", type="text/css", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
     link(rel="stylesheet", type="text/css", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
-    link(rel="stylesheet", type="text/css", href="/stylesheets/style.css")
-    link(href="/style.css", rel="stylesheet", type="text/css")
+    link(rel="stylesheet", type="text/css", href="/main.css")
     script(src='https://code.jquery.com/jquery-3.1.1.slim.min.js', integrity='sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n', crossorigin='anonymous')
     script(type="text/javascript", src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
     script(defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js")
@@ -17,26 +16,24 @@ html(lang="en")
     title Sabrina's Portfolio
     body
       nav.navbar.navbar-custom.navbar-fixed-top
-        .container
-          .navbar-header
-            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
-              span.sr-only Toggle navigation
-              span.icon-bar
-              span.icon-bar
-              span.icon-bar
-            a.navbar-brand(href='#') WELCOME
-          #navbar.collapse.navbar-collapse
-            ul.nav.navbar-nav
-              li
-                a(href='#about') ABOUT ME
-              li
-                a(href='#contact') CONTACT
-
-
+          .container
+            .navbar-header
+              button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+                span.sr-only Toggle navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+              a.navbar-brand(href='#') WELCOME
+            #navbar.collapse.navbar-collapse
+              ul.nav.navbar-nav
+                li
+                  a(href='#about') ABOUT ME
+                li
+                  a(href='#contact') CONTACT
       #about
         .col-md-2.col-sm-12.col-xs-12
           #about-picture
-            img.thumbnail(src='./img/pic.jpg')
+            img.thumbnail(src='./assets/img/pic.jpg')
         .col-md-10.col-sm-12.col-xs-12    
           #about-info.panel-group
             .panel.panel-default
@@ -170,15 +167,15 @@ html(lang="en")
               li
                 p 
                   a(href="mailto:sabrina.fer.zam@gmail.com" target="_top") 
-                    img(src="./img/icons/mail.svg") 
+                    img(src="./assets/img/icons/mail.svg") 
                   a(href="mailto:sabrina.fer.zam@gmail.com" target="_top") EMAIL
               li
                 p 
                   a(href="https://www.linkedin.com/in/sabrina-fern%C3%A1ndez-zambrano-46a2a3125/")
-                    img(src="./img/icons/linkedin.svg") 
+                    img(src="./assets/img/icons/linkedin.svg") 
                   a(href="https://www.linkedin.com/in/sabrina-fern%C3%A1ndez-zambrano-46a2a3125/") LINKEDIN
               li
                 p 
                   a(href="https://github.com/SabrinaFZ")
-                    img(src="./img/icons/github.svg")  
+                    img(src="./assets/img/icons/github.svg")  
                   a(href="https://github.com/SabrinaFZ") GITHUB

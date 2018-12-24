@@ -1,33 +1,35 @@
+@import 'colors';
+@import 'fonts';
+
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+
+@mixin transform($property){
+  -webkit-transform: $property;
+  -moz-transform: $property;
+	-ms-transform: $property;
+	transform: $property;
+}
 
 @keyframes bounce {
 	0%, 100%, 20%, 50%, 80% {
-		-webkit-transform: translateY(0);
-		-ms-transform:     translateY(0);
-		transform:         translateY(0)
+		@include transform(translateY(0));
 	}
 	40% {
-		-webkit-transform: translateY(-30px);
-		-ms-transform:     translateY(-30px);
-		transform:         translateY(-30px)
+    @include transform(translateY(-30px));
 	}
 	60% {
-		-webkit-transform: translateY(-15px);
-		-ms-transform:     translateY(-15px);
-		transform:         translateY(-15px)
+    @include transform(translateY(-15px));
 	}
 }
 
-$white: #ECE9E6;
-$light-black: #414345;
-$dark-black: #232526;
+* {
+  box-sizing: border-box;
+}
 
 body{
   background-color: $dark-black; 
-  background-color: -webkit-linear-gradient(to right, $light-black, $dark-black);
-  background-color: linear-gradient(to right, $light-black, $dark-black); 
   font-family: 'Raleway', sans-serif;
-  padding-top: 70px;
+  padding-top: 5em;
   color: $white;
 }
 
@@ -54,13 +56,12 @@ nav{
 
 ul{
   list-style: none;
-  padding: 0px;
+  padding: 0;
 }
-
 
 #about{
   width: 50%;
-  margin: 50px auto;
+  margin: 5rem auto;
 
   #about-picture{
     float:left;
@@ -74,14 +75,14 @@ ul{
   .about-label{
     font-weight: bold;
     color:  $light-black;
-    padding: 0px;
-    margin-bottom: 5px;
-    font-size: 16px;
+    padding: 0;
+    margin-bottom: 1rem;
+    font-size: $medium;
   }
 
   .about-text{
     padding-left: 10px;
-    font-size: 14px;
+    font-size: $small;
   }
 
   
