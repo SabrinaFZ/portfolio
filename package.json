@@ -4,8 +4,9 @@
   "description": "Personal portfolio",
   "main": "index.js",
   "scripts": {
+    "start": "node ./server.js",
     "build": "webpack --mode production",
-    "start": "webpack && webpack-dev-server --mode development --open"
+    "dev": "webpack && webpack-dev-server --mode development --open"
   },
   "repository": {
     "type": "git",
