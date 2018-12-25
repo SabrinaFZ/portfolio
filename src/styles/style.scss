@@ -1,307 +1,58 @@
 @import 'colors';
 @import 'fonts';
 
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-
-@mixin transform($property){
-  -webkit-transform: $property;
-  -moz-transform: $property;
-	-ms-transform: $property;
-	transform: $property;
-}
-
-@keyframes bounce {
-	0%, 100%, 20%, 50%, 80% {
-		@include transform(translateY(0));
-	}
-	40% {
-    @include transform(translateY(-30px));
-	}
-	60% {
-    @include transform(translateY(-15px));
-	}
-}
-
 * {
   box-sizing: border-box;
 }
 
-body{
-  background-color: $dark-black; 
+body {
+  background-color: $dark-black;
   font-family: 'Raleway', sans-serif;
-  padding-top: 5em;
+}
+
+h1 {
+  font-size: $large;
+}
+
+h2 {
+  font-size: $medium;
+}
+
+h3, p, a {
+  font-size: $normal;
+}
+
+nav.navigator {
+
   color: $white;
-}
-
-nav{
-  a {
-    color :$white;
-    text-align: center;
-  }
-  a:hover{
-    color: $light-black;
-    font-weight: bold;
-  }
-  ul{
-    width: 100%;
-    li{
-      width: 50%;
-    }
-  }
-  .navbar-brand{
-    display: none;
-    float: none;
-  }
-}
-
-ul{
-  list-style: none;
-  padding: 0;
-}
-
-#about{
-  width: 50%;
-  margin: 5rem auto;
-
-  #about-picture{
-    float:left;
-  }
-
-  #about-info{
-    width: 90%;
-    float:right;
-  }
-
-  .about-label{
-    font-weight: bold;
-    color:  $light-black;
-    padding: 0;
-    margin-bottom: 1rem;
-    font-size: $medium;
-  }
-
-  .about-text{
-    padding-left: 10px;
-    font-size: $small;
-  }
-
-  
-}
-
-#contact{
-  width: 51%;
-  margin: 400px auto;
-  #contact-items{
-    ul{
-      background-color: $light-black;
-      li{
-        float:left;
-        width: 32.3%;
-        background-color: $light-black;
-        border-radius: 4px;
-        margin-right: 1%;
-        margin-bottom: 20px;
-        p{
-          text-align:center;
-          padding: 10px;
-          margin-bottom: 0px;
-          a{
-            color: $white;
-          }
-          a:hover{
-            text-decoration: none;
-            font-weight: bold;
-          }
-          img{
-            cursor: pointer;
-            display: block;
-            margin: 0 auto;
-            margin-bottom: 5px;
-            width: 20%;
-          }
-        }
-      }
-      li:hover{
-        opacity: 0.8;
-      }
-    }
-  }
-}
-
-.thumbnail{
-    border: 0.5px solid $white;
-    background-color: transparent;
-  }
-
-.nav{
-  li{
-    a:hover{
-        opacity: 0.8;
-        font-weight: bold;
-      }
-  }
-}
-
-.navbar-custom{
-  background-color: $light-black;
-}
-
-.panel{
-  text-align: center;
-  background-color: $light-black;
-
-  .fas-left{
-    float:left;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-timing-function: ease-in-out;
-    animation-timing-function: ease-in-out;
-  }
-
-  .panel-title{
-    padding: 10px 15px;
-
-    .about-title{
-      text-decoration: none;
-      text-align: center;
-    }
-  }
-
-  .about-body{
-      background-color: $white;
-      color: $light-black;
-      text-align: left;
-      padding: 15px 15px;
-      
-  }
-}
-
-.panel:hover{
-  opacity: 0.8;
-  .fas-left{
-    animation-name: bounce;
-    -moz-animation-name: bounce;
-  }
-}
-
-.panel-default{
-  border: none;
-}
-
-//Mobiles
-@media(max-width: 767px){
-  nav{
-    a{
-      color: $light-black; 
-    }
-    ul{
-      width: 100%;
-      li{
-        margin: 0 auto;
-        width: 50%;
-      }
-    }
-    #navbar{
-      background-color: $white;  /* fallback for old browsers */
-      background-color: -webkit-linear-gradient(to right, #FFFFFF, $white);  /* Chrome 10-25, Safari 5.1-6 */
-      background-color: linear-gradient(to right, #FFFFFF, $white); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    }
-    .navbar-nav{
-      margin: 0;
-    }
-    .navbar-brand{
-      display: block;
-      color: #ECE9E6;
-      width: 80%;
-      margin: 0 auto;
-    }
-    .navbar-toggle{
-      background-color: $white;
-      span{
-        background-color: $light-black;
-      }
-    }
-  }
-  #about{
-    width: 100%;
-    margin: 0px auto;
-
-    #about-picture{
-      display:block;
-      float: none;
-      img{
-        margin: 10px auto;
-      }
-    }
-
-    #about-info{
-      float: none;
-      width: 100%;
-    }
-  }
-
-  #contact{
-    width: 101%;
-  #contact-items{
-    ul{
-      li{
-        p{
-          img{
-            width: 50%;
-            }
-          }
-        }
-      }
-    }
-  }
-
-}
-
-//Tablets
-@media (min-width: 768px) and (max-width: 1024px), (min-width: 1025px) and (max-width: 1280px){
-  #about{
+  position: fixed;
   width: 100%;
-  margin: 0px auto;
-
-    #about-picture{
-      display:block;
-      float: none;
-      img{
-        margin: 10px auto;
-      }
-    }
-
-    #about-info{
-      float: none;
-      width: 100%;
-    }
-  }
-
-  .panel{
-  text-align: center;
+  padding: 1rem;
   background-color: $light-black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  h1 {
+    cursor: default;
+  }
 
-    .panel-title{
-      padding: 20px 15px;
+  li {
+    display: inline-block;
+    padding: 0 0.5rem;
+    height: 100%;
+  }
+
+  a {
+    color: $white;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+
+    &:hover {
+      font-weight: 600;
+      font-size: $medium;
     }
-  }
-
-  .panel-default{
-    margin-top: 10px;
-  }
-
-  #contact{
-    width: 101%;
   }
 }
-
-
-
-
-
-
-
-
-
