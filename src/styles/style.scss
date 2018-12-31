@@ -73,9 +73,11 @@ header#home{
       ul{
         li{
           padding: 2rem 0.5rem;
+          text-align: center;
           a{
             color: $white;
             text-decoration: none;
+            font-size: $small;
           }
         }
       }
@@ -92,6 +94,7 @@ header#home{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    opacity: 0.9;
   
     h1 {
       cursor: default;
@@ -449,7 +452,15 @@ footer{
       width: 20%;
     }
     nav.navigator-responsive{
-      
+      div#navigator-resposive-submenu{
+        ul{
+          li{
+            a{
+              font-size: $normal;
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -486,6 +497,16 @@ footer{
           color: $white;
           font-size: $xx-large;
           
+        }
+
+        div#navigator-resposive-submenu{
+          ul{
+            li{
+              a{
+                font-size: $large;
+              }
+            }
+          }
         }
       }
 
