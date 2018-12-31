@@ -20,6 +20,7 @@ import miriadax from './assets/img/icons/miriadax.png';
 
 //js
 import dropdown from './js/dropdown.js';
+import smoothScroll from './js/smooth-scroll.js';
 
 // jquery
 import $ from 'jquery';

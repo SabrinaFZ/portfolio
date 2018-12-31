@@ -13,17 +13,7 @@ html(lang="en")
 
     body
       nav.navigator#home
-        header
-          h1 &lt;/&gt; Full Stack Web Developer
-        ul
-          li 
-            a(href="#home") Home
-          li 
-            a(href="#about-me") About me
-          li 
-            a(href="#projects") Projects
-          li 
-            a(href="#contact") Contact
+        include ./templates/navigator.pug
       main
         //- About me
         section#about-me
@@ -44,23 +34,18 @@ html(lang="en")
               include ./templates/about-me/skills.pug
             article.dropdown#languages
               include ./templates/about-me/languages.pug
-        //- Projects
-        section#projects
-          header
-            h2 Projects
-          article
-            ul
-              li Project Title
-              li Description
-              li Github Link
         //- Contact
         section#contact
           header
             h2 Contact
           article
             ul
-              li Email
-              li Linkedin
+              li.item
+                include ./templates/contact/email.pug
+              li.item
+                include ./templates/contact/linkedin.pug
+              li.item 
+                include ./templates/contact/github.pug
 
       footer
         address © Sabrina Fernandez Zambrano
