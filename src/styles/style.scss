@@ -422,12 +422,165 @@ footer{
   
 }
 
+@media only screen 
+    and (orientation: landscape){
+
+  header#home{
+    img {
+      width: 20%;
+    }
+    nav.navigator-responsive{
+      
+    }
+  }
+}
+
 //tablets
 @media only screen 
     and (min-device-width: 768px)
     and (max-device-width: 1024px){
 
+    header#home{
+      img {
+        width: 30%;
+      }
+
+      h1 {
+        font-size: $xx-large;
+      }
+
+      p {
+        font-size: $x-large;
+      }
+
+      nav.navigator-responsive{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 0.5rem;
+        background-color: $dark-black;
+        width: 100%;
+        text-align: left;
+
+        a {
+          color: $white;
+          font-size: $xx-large;
+          
+        }
+      }
+
+      nav.navigator {
+        display: none;
+      }
+  }
+
+  main {
+      padding: 0;
+
+      header {
+        margin-bottom: 1.5rem;
+
+        h2 {
+          font-size: $x-large;
+        }
+      }
+
+      section {
+        clear: both;
+        padding: 1.5rem 1rem;
+      }
+
+      #about-me {
+        .container{
+          article {
+            &.dropdown{
+              header {
+                h3{
+                  font-size: $large;
+                }
+              }
+              .container-wrapper {
+                padding: 0.5rem 0;
+
+                ul.item{
+                  padding: 0.8rem 1rem;
+
+                  & .left-side{
+                    visibility: hidden;
+                    width: 0%;
+                  }
+
+                  & .right-side{
+                    li{
+                      &.date{
+                        font-size: $normal;
+                      }
+                      &.title{
+                        font-size: $large;
+                      }
+                      &.location{
+                        font-size: $large;
+                      }
+                      &.tasks {
+                        font-size: $normal;
+                      }
+                    }
+                    
+                  }
+                }
+              }
+
+              &#personal-details{
+                ul.item {
+                  display: block;
+                  justify-content: unset;
+                  li{
+                    margin-left: 1rem;
+                    line-height: 2rem;
+                    font-size: $normal;
+                    &:first-child{
+                      margin-left: 0;
+                      font-size: $large;
+                    }
+                  }
+                }
+              }
+
+              &#skills, &#languages{
+                ul.item {
+                  li{
+                    font-size: $normal;
+
+                    &:first-child {
+                      font-size: $large;
+                    }
+                  }
+                  
+                }
+              }
+            }
+          }
+
+        }
+      }
+
+      #contact{
+        .item{
+          img {
+            width: 40%;
+          }
+        }
+      }
+  }
+  
+  footer{
+    address{
+      font-size: $small;
     }
+  }
+
+}
 
 
 
