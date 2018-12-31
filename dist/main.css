@@ -1,0 +1,408 @@
+@keyframes bounce {
+  0%, 100%, 20%, 50%, 80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -moz-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px); }
+  60% {
+    -webkit-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px); } }
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+    */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@keyframes bounce {
+  0%, 100%, 20%, 50%, 80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -moz-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px); }
+  60% {
+    -webkit-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px); } }
+
+* {
+  box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  min-height: 100%; }
+
+body {
+  background-color: #232526;
+  font-family: 'Raleway', sans-serif; }
+
+h1 {
+  font-size: 1.6rem; }
+
+h2 {
+  font-size: 1.4rem; }
+
+h3, p, a {
+  font-size: 1.2rem; }
+
+header#home {
+  background-size: cover;
+  height: 100vh;
+  background: url(assets/img/background.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ECE9E6;
+  text-align: center; }
+  header#home img {
+    width: 10%;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+    border: 0.3 solid #232526; }
+  header#home h1 {
+    font-size: 3rem; }
+  header#home p {
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: 800;
+    font-style: italic; }
+  header#home nav.navigator-responsive {
+    display: none;
+    opacity: 0.9; }
+    header#home nav.navigator-responsive div#navigator-resposive-submenu {
+      width: 100%;
+      text-align: left;
+      background-color: #414345;
+      opacity: 1; }
+      header#home nav.navigator-responsive div#navigator-resposive-submenu ul li {
+        padding: 2rem 0.5rem; }
+        header#home nav.navigator-responsive div#navigator-resposive-submenu ul li a {
+          color: #ECE9E6;
+          text-decoration: none; }
+  header#home nav.navigator {
+    top: 0;
+    color: #ECE9E6;
+    position: fixed;
+    width: 100%;
+    padding: 1rem;
+    background-color: #232526;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    header#home nav.navigator h1 {
+      cursor: default;
+      font-size: 1.4rem; }
+    header#home nav.navigator li {
+      display: inline-block;
+      padding: 0 0.5rem;
+      height: 100%; }
+      header#home nav.navigator li a {
+        color: #ECE9E6;
+        text-decoration: none;
+        transition: all 0.2s ease-in;
+        -webkit-transition: all 0.2s ease-in;
+        -moz-transition: all 0.2s ease-in; }
+        header#home nav.navigator li a:hover {
+          font-weight: 600;
+          font-size: 1.4rem; }
+
+main {
+  padding: 2rem 10rem; }
+  main header {
+    text-align: center;
+    margin-bottom: 3rem; }
+    main header h2 {
+      color: #ECE9E6;
+      font-size: 1.5rem;
+      font-weight: 800; }
+  main section {
+    clear: both;
+    padding: 2rem; }
+  main #about-me .container article {
+    margin-bottom: 0.5rem; }
+    main #about-me .container article.dropdown header {
+      text-align: left;
+      background-color: #414345;
+      padding: 0.8rem;
+      margin-bottom: 0;
+      border-radius: 0.2rem;
+      justify-content: space-between;
+      display: flex;
+      align-items: center; }
+      main #about-me .container article.dropdown header h3 {
+        color: #ECE9E6;
+        text-transform: uppercase;
+        text-align: center;
+        width: 100%;
+        cursor: pointer; }
+      main #about-me .container article.dropdown header i {
+        font-size: 1.2rem;
+        color: #ECE9E6; }
+      main #about-me .container article.dropdown header:hover i {
+        animation-name: bounce;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-timing-function: ease-in-out;
+        -moz-animation-name: bounce;
+        -moz-animation-duration: 1s;
+        -moz-animation-timing-function: ease-in-out;
+        -webkit-animation-name: bounce;
+        -webkit-animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        -webkit-animation-timing-function: ease-in-out; }
+    main #about-me .container article.dropdown .container-wrapper {
+      display: none;
+      background-color: #ECE9E6;
+      color: #414345;
+      padding: 1rem 0;
+      border-bottom-left-radius: 0.2rem;
+      border-bottom-right-radius: 0.2rem; }
+      main #about-me .container article.dropdown .container-wrapper ul.item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.8rem 2rem; }
+        main #about-me .container article.dropdown .container-wrapper ul.item .left-side {
+          width: 15%; }
+          main #about-me .container article.dropdown .container-wrapper ul.item .left-side li.logo {
+            margin-right: 1rem;
+            padding: 0.3rem; }
+            main #about-me .container article.dropdown .container-wrapper ul.item .left-side li.logo img {
+              width: 100%;
+              border-radius: 50%;
+              border: 0.08rem solid #232526; }
+        main #about-me .container article.dropdown .container-wrapper ul.item .right-side {
+          width: 100%; }
+          main #about-me .container article.dropdown .container-wrapper ul.item .right-side li {
+            padding: 0.3rem; }
+            main #about-me .container article.dropdown .container-wrapper ul.item .right-side li.date {
+              font-weight: 600;
+              font-size: 1rem;
+              display: block; }
+            main #about-me .container article.dropdown .container-wrapper ul.item .right-side li.title {
+              font-size: 1.2rem;
+              font-style: italic;
+              font-weight: 700; }
+            main #about-me .container article.dropdown .container-wrapper ul.item .right-side li.location {
+              font-size: 1.2rem; }
+            main #about-me .container article.dropdown .container-wrapper ul.item .right-side li.tasks {
+              margin-left: 1rem; }
+              main #about-me .container article.dropdown .container-wrapper ul.item .right-side li.tasks li {
+                padding: 0.5rem;
+                line-height: 1.5rem; }
+                main #about-me .container article.dropdown .container-wrapper ul.item .right-side li.tasks li i {
+                  margin-right: 0.5rem; }
+    main #about-me .container article.dropdown#personal-details ul.item {
+      display: flex;
+      justify-content: space-between; }
+      main #about-me .container article.dropdown#personal-details ul.item li {
+        font-size: 1rem; }
+        main #about-me .container article.dropdown#personal-details ul.item li:first-child {
+          font-weight: 700;
+          font-size: 1.2rem;
+          font-style: italic; }
+    main #about-me .container article.dropdown#skills ul.item, main #about-me .container article.dropdown#languages ul.item {
+      display: block; }
+      main #about-me .container article.dropdown#skills ul.item li, main #about-me .container article.dropdown#languages ul.item li {
+        padding-top: 0.3rem;
+        margin-left: 1rem;
+        font-size: 1rem;
+        line-height: 1.5rem; }
+        main #about-me .container article.dropdown#skills ul.item li:first-child, main #about-me .container article.dropdown#languages ul.item li:first-child {
+          margin-left: 0;
+          font-weight: 700;
+          font-size: 1.2rem;
+          font-style: italic; }
+  main #contact ul {
+    display: flex;
+    justify-content: space-around;
+    text-align: center; }
+  main #contact .item img {
+    width: 30%; }
+    main #contact .item img:hover {
+      animation-name: bounce;
+      animation-duration: 1s;
+      animation-fill-mode: both;
+      animation-timing-function: ease-in-out;
+      -moz-animation-name: bounce;
+      -moz-animation-duration: 1s;
+      -moz-animation-timing-function: ease-in-out;
+      -webkit-animation-name: bounce;
+      -webkit-animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+      -webkit-animation-timing-function: ease-in-out; }
+
+footer {
+  text-align: center; }
+  footer address {
+    color: #ECE9E6; }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+  header#home img {
+    width: 40%; }
+  header#home h1 {
+    font-size: 1.8rem; }
+  header#home p {
+    font-size: 1.2rem; }
+  header#home nav.navigator-responsive {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0.5rem;
+    background-color: #232526;
+    width: 100%;
+    text-align: left; }
+    header#home nav.navigator-responsive a {
+      color: #ECE9E6;
+      font-size: 1.8rem; }
+  header#home nav.navigator {
+    display: none; }
+  main {
+    padding: 0; }
+    main header {
+      margin-bottom: 1.5rem; }
+      main header h2 {
+        font-size: 1.2rem; }
+    main section {
+      clear: both;
+      padding: 1.5rem 1rem; }
+    main #about-me .container article.dropdown header h3 {
+      font-size: 1rem; }
+    main #about-me .container article.dropdown .container-wrapper {
+      padding: 0.5rem 0; }
+      main #about-me .container article.dropdown .container-wrapper ul.item {
+        padding: 0.8rem 1rem; }
+        main #about-me .container article.dropdown .container-wrapper ul.item .left-side {
+          visibility: hidden;
+          width: 0%; }
+    main #about-me .container article.dropdown#personal-details ul.item {
+      display: block;
+      justify-content: unset; }
+      main #about-me .container article.dropdown#personal-details ul.item li {
+        margin-left: 1rem;
+        line-height: 1.5rem; }
+        main #about-me .container article.dropdown#personal-details ul.item li:first-child {
+          margin-left: 0; }
+    main #contact .item img {
+      width: 50%; }
+  footer address {
+    font-size: 0.8rem; } }
+
+@media only screen and (orientation: landscape) {
+  header#home img {
+    width: 20%; } }
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  header#home img {
+    width: 30%; }
+  header#home h1 {
+    font-size: 3rem; }
+  header#home p {
+    font-size: 2rem; }
+  header#home nav.navigator-responsive {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0.5rem;
+    background-color: #232526;
+    width: 100%;
+    text-align: left; }
+    header#home nav.navigator-responsive a {
+      color: #ECE9E6;
+      font-size: 3rem; }
+  header#home nav.navigator {
+    display: none; }
+  main {
+    padding: 0; }
+    main header {
+      margin-bottom: 1.5rem; }
+      main header h2 {
+        font-size: 2rem; }
+    main section {
+      clear: both;
+      padding: 1.5rem 1rem; }
+    main #about-me .container article.dropdown header h3 {
+      font-size: 1.8rem; }
+    main #about-me .container article.dropdown .container-wrapper {
+      padding: 0.5rem 0; }
+      main #about-me .container article.dropdown .container-wrapper ul.item {
+        padding: 0.8rem 1rem; }
+        main #about-me .container article.dropdown .container-wrapper ul.item .left-side {
+          visibility: hidden;
+          width: 0%; }
+        main #about-me .container article.dropdown .container-wrapper ul.item .right-side li.date {
+          font-size: 1.4rem; }
+        main #about-me .container article.dropdown .container-wrapper ul.item .right-side li.title {
+          font-size: 1.8rem; }
+        main #about-me .container article.dropdown .container-wrapper ul.item .right-side li.location {
+          font-size: 1.8rem; }
+        main #about-me .container article.dropdown .container-wrapper ul.item .right-side li.tasks {
+          font-size: 1.4rem; }
+    main #about-me .container article.dropdown#personal-details ul.item {
+      display: block;
+      justify-content: unset; }
+      main #about-me .container article.dropdown#personal-details ul.item li {
+        margin-left: 1rem;
+        line-height: 2rem;
+        font-size: 1.4rem; }
+        main #about-me .container article.dropdown#personal-details ul.item li:first-child {
+          margin-left: 0;
+          font-size: 1.8rem; }
+    main #about-me .container article.dropdown#skills ul.item li, main #about-me .container article.dropdown#languages ul.item li {
+      font-size: 1.4rem; }
+      main #about-me .container article.dropdown#skills ul.item li:first-child, main #about-me .container article.dropdown#languages ul.item li:first-child {
+        font-size: 1.8rem; }
+    main #contact .item img {
+      width: 40%; }
+  footer address {
+    font-size: 1.2rem; } }
+
