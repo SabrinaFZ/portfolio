@@ -44,8 +44,7 @@ header#home{
     border-radius: 50%;
     margin-bottom: 0.5rem;
     border: 0.3 solid $dark-black;
-    -webkit-filter: grayscale(50%);
-    filter: grayscale(50%);
+    
   }
 
   h1 {
@@ -300,4 +299,7 @@ footer{
     color: $white;
   }
 }
+
+
+
 
