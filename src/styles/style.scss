@@ -1,0 +1,605 @@
+@import 'colors';
+@import 'fonts';
+@import 'animations';
+
+* {
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  background-color: $dark-black;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  font-size: $medium;
+}
+
+h2 {
+  font-size: $normal;
+}
+
+h3, p, a {
+  font-size: $small;
+}
+
+header#home{
+  background-size: cover;
+  height: 100vh;
+  background: url('../assets/img/background.jpg');
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+  text-align: center;
+
+  
+  img {
+    width: 10%;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+    border: 0.3 solid $dark-black;
+    
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight:800;
+    font-style: italic;
+  }
+
+  nav.navigator-responsive{
+    display: none;
+    opacity: 0.9;
+
+    div#navigator-resposive-submenu{
+      width: 100%;
+      text-align: left;
+      background-color: $light-black;
+      opacity: 1;
+    
+      ul{
+        li{
+          padding: 2rem 0.5rem;
+          a{
+            color: $white;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  nav.navigator {
+    top: 0;
+    color: $white;
+    position: fixed;
+    width: 100%;
+    padding: 1rem;
+    background-color: $dark-black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    h1 {
+      cursor: default;
+      font-size: $normal;
+    }
+
+    li {
+      display: inline-block;
+      padding: 0 0.5rem;
+      height: 100%;
+
+      a {
+        color: $white;
+        text-decoration: none;
+        transition: all 0.2s ease-in;
+        -webkit-transition: all 0.2s ease-in;
+        -moz-transition: all 0.2s ease-in;
+
+        &:hover {
+          font-weight: 600;
+          font-size: $normal;
+        }
+      }
+    }
+  }
+}
+
+main {
+  padding: 2rem 10rem;
+
+  header {
+    text-align: center;
+    margin-bottom: 3rem;
+
+    h2 {
+      color: $white;
+      font-size: 1.5rem;
+      font-weight: 800;
+    }
+  }
+
+  section {
+    clear: both;
+    padding: 2rem;
+  }
+
+  #about-me {
+    .container {
+
+      article{
+        margin-bottom: 0.5rem;
+
+        &.dropdown{
+
+          header {
+            text-align: left;
+            background-color: $light-black;
+            padding: 0.8rem;
+            margin-bottom: 0;
+            border-radius: 0.2rem;
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+
+            h3 {
+              color: $white;
+              text-transform: uppercase;
+              text-align: center;
+              width: 100%;
+              cursor: pointer;
+            }
+
+            i{
+              font-size: $small;
+              color: $white;
+            }
+
+            &:hover{
+              i{
+                animation-name: bounce;
+                animation-duration: 1s;
+                animation-fill-mode: both;
+                animation-timing-function: ease-in-out;
+                -moz-animation-name: bounce;
+                -moz-animation-duration: 1s;;
+                -moz-animation-timing-function: ease-in-out; 
+                -webkit-animation-name: bounce;
+                -webkit-animation-duration: 1s;
+                -webkit-animation-fill-mode: both;
+                -webkit-animation-timing-function: ease-in-out;
+              }
+            }
+          }
+
+          .container-wrapper {
+            display: none;
+            background-color: $white;
+            color: $light-black;
+            padding: 1rem 0;
+            border-bottom-left-radius: 0.2rem;
+            border-bottom-right-radius: 0.2rem;     
+
+            ul.item{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 0.8rem 2rem;
+
+              & .left-side{
+                width: 15%;
+                li{
+                  &.logo{
+                    margin-right: 1rem;
+                    padding: 0.3rem;
+                    img{
+                      width: 100%;
+                      border-radius: 50%;
+                      border: 0.08rem solid $dark-black;
+                    }
+                  }
+                }
+              }
+
+              & .right-side{
+                width: 100%;
+                li{
+                  padding: 0.3rem;
+                  &.date{
+                    font-weight: 600;
+                    font-size: $x-small;
+                    display: block;
+                  }
+                  &.title{
+                    font-size: $small;
+                    font-style: italic;
+                    font-weight: 700;
+                  }
+                  &.location{
+                    font-size: $small;
+                  }
+                  &.tasks {
+                    margin-left: 1rem;
+                    li {
+                      padding: 0.5rem;
+                      line-height: 1.5rem;
+
+                      i {
+                        margin-right: 0.5rem;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          &#personal-details{
+            ul.item{
+              display: flex;
+              justify-content: space-between;
+              li{
+                font-size: $x-small;
+                &:first-child{
+                  font-weight: 700;
+                  font-size: $small;
+                  font-style: italic;
+                }
+              }
+              
+            }
+          }
+
+          &#skills, &#languages{
+            ul.item {
+              display: block;
+              li{
+                padding-top: 0.3rem;
+                margin-left: 1rem;
+                font-size: $x-small;
+                line-height: 1.5rem;
+
+                &:first-child {
+                  margin-left: 0;
+                  font-weight: 700;
+                  font-size: $small;
+                  font-style: italic;
+                }
+              }
+              
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #contact{
+    ul{
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+    }
+    .item{
+      img {
+        width: 30%;
+
+        &:hover{
+          animation-name: bounce;
+          animation-duration: 1s;
+          animation-fill-mode: both;
+          animation-timing-function: ease-in-out;
+          -moz-animation-name: bounce;
+          -moz-animation-duration: 1s;;
+          -moz-animation-timing-function: ease-in-out; 
+          -webkit-animation-name: bounce;
+          -webkit-animation-duration: 1s;
+          -webkit-animation-fill-mode: both;
+          -webkit-animation-timing-function: ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+footer{
+  text-align: center;
+  address{
+    color: $white;
+  }
+}
+
+
+// ---------- Media queries ------------ //
+
+// mobiles
+@media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-width: 768px){
+
+  header#home{
+    img {
+      width: 40%;
+    }
+
+    h1 {
+      font-size: $large;
+    }
+
+    p {
+      font-size: $small;
+    }
+
+    nav.navigator-responsive{
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 0.5rem;
+      background-color: $dark-black;
+      width: 100%;
+      text-align: left;
+
+      a {
+        color: $white;
+        font-size: $large;
+        
+      }
+    }
+
+    nav.navigator {
+      display: none;
+    }
+    
+  }
+
+  main {
+      padding: 0;
+
+      header {
+        margin-bottom: 1.5rem;
+
+        h2 {
+          font-size: $small;
+        }
+      }
+
+      section {
+        clear: both;
+        padding: 1.5rem 1rem;
+      }
+
+      #about-me {
+        .container{
+          article {
+            &.dropdown{
+              header {
+                h3{
+                  font-size: $x-small;
+                }
+              }
+              .container-wrapper {
+                padding: 0.5rem 0;
+
+                ul.item{
+                  padding: 0.8rem 1rem;
+
+                  & .left-side{
+                    visibility: hidden;
+                    width: 0%;
+                  }
+                }
+              }
+
+              &#personal-details{
+                ul.item {
+                  display: block;
+                  justify-content: unset;
+                  li{
+                    margin-left: 1rem;
+                    line-height: 1.5rem;
+                    &:first-child{
+                      margin-left: 0;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+        }
+      }
+
+      #contact{
+        .item{
+          img {
+            width: 50%;
+          }
+        }
+      }
+  }
+  
+  footer{
+    address{
+      font-size: $xx-small;
+    }
+  }
+  
+}
+
+@media only screen 
+    and (orientation: landscape){
+
+  header#home{
+    img {
+      width: 20%;
+    }
+    nav.navigator-responsive{
+      
+    }
+  }
+}
+
+//tablets
+@media only screen 
+    and (min-device-width: 768px)
+    and (max-device-width: 1024px){
+
+    header#home{
+      img {
+        width: 30%;
+      }
+
+      h1 {
+        font-size: $xx-large;
+      }
+
+      p {
+        font-size: $x-large;
+      }
+
+      nav.navigator-responsive{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 0.5rem;
+        background-color: $dark-black;
+        width: 100%;
+        text-align: left;
+
+        a {
+          color: $white;
+          font-size: $xx-large;
+          
+        }
+      }
+
+      nav.navigator {
+        display: none;
+      }
+  }
+
+  main {
+      padding: 0;
+
+      header {
+        margin-bottom: 1.5rem;
+
+        h2 {
+          font-size: $x-large;
+        }
+      }
+
+      section {
+        clear: both;
+        padding: 1.5rem 1rem;
+      }
+
+      #about-me {
+        .container{
+          article {
+            &.dropdown{
+              header {
+                h3{
+                  font-size: $large;
+                }
+              }
+              .container-wrapper {
+                padding: 0.5rem 0;
+
+                ul.item{
+                  padding: 0.8rem 1rem;
+
+                  & .left-side{
+                    visibility: hidden;
+                    width: 0%;
+                  }
+
+                  & .right-side{
+                    li{
+                      &.date{
+                        font-size: $normal;
+                      }
+                      &.title{
+                        font-size: $large;
+                      }
+                      &.location{
+                        font-size: $large;
+                      }
+                      &.tasks {
+                        font-size: $normal;
+                      }
+                    }
+                    
+                  }
+                }
+              }
+
+              &#personal-details{
+                ul.item {
+                  display: block;
+                  justify-content: unset;
+                  li{
+                    margin-left: 1rem;
+                    line-height: 2rem;
+                    font-size: $normal;
+                    &:first-child{
+                      margin-left: 0;
+                      font-size: $large;
+                    }
+                  }
+                }
+              }
+
+              &#skills, &#languages{
+                ul.item {
+                  li{
+                    font-size: $normal;
+
+                    &:first-child {
+                      font-size: $large;
+                    }
+                  }
+                  
+                }
+              }
+            }
+          }
+
+        }
+      }
+
+      #contact{
+        .item{
+          img {
+            width: 40%;
+          }
+        }
+      }
+  }
+  
+  footer{
+    address{
+      font-size: $small;
+    }
+  }
+
+}
+
+
+
+
