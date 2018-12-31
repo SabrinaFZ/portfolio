@@ -29,8 +29,10 @@
   "dependencies": {
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
+    "autoprefixer": "^9.4.3",
     "babel-loader": "^8.0.4",
     "css-loader": "^2.0.2",
+    "exports-loader": "^0.7.0",
     "express": "^4.15.3",
     "file-loader": "^3.0.1",
     "html-loader": "^0.5.5",
@@ -38,6 +40,7 @@
     "jquery": "^3.3.1",
     "mini-css-extract-plugin": "^0.5.0",
     "node-sass": "^4.11.0",
+    "postcss-loader": "^3.0.0",
     "pug": "^2.0.0-rc.2",
     "pug-html-loader": "^1.1.5",
     "sass-loader": "^7.1.0",

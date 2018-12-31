@@ -41,7 +41,11 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(png|svg|ico|jpg|gif)(\?.*)?$/,
+                test: /\.css$/,
+                use: ['css-loader']
+            },
+            {
+                test: /\.(png|svg|ico|jpe?g|gif)(\?.*)?$/,
                 loader: 'file-loader',
                 query: {
                     name: 'assets/img/[name].[ext]'
@@ -53,10 +57,6 @@ module.exports = {
                 query: {
                     name: 'assets/fonts/[name].[ext]'
                 }
-            },
-            {
-                test: /bootstrap\/dist\/js\/umd\//, 
-                loader: 'imports?jQuery=jquery'
             }
         ]
     },
@@ -72,8 +72,9 @@ module.exports = {
             chunkFilename: "[id].css"
         }),
         new webpack.ProvidePlugin({
-            $: 'jquery',
-            jQuery: 'jquery'
+            '$': "jquery",
+            'jQuery': "jquery",
+            "window.jQuery": "jquery"
         })
     ]
 }

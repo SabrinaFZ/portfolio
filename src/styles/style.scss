@@ -1,5 +1,6 @@
 @import 'colors';
 @import 'fonts';
+@import 'animations';
 
 * {
   box-sizing: border-box;
@@ -11,15 +12,15 @@ body {
 }
 
 h1 {
-  font-size: $large;
-}
-
-h2 {
   font-size: $medium;
 }
 
-h3, p, a {
+h2 {
   font-size: $normal;
+}
+
+h3, p, a {
+  font-size: $small;
 }
 
 nav.navigator {
@@ -35,24 +36,205 @@ nav.navigator {
   
   h1 {
     cursor: default;
+    font-size: $normal;
   }
 
   li {
     display: inline-block;
     padding: 0 0.5rem;
     height: 100%;
-  }
 
-  a {
-    color: $white;
-    text-decoration: none;
-    transition: all 0.2s ease-in;
-    -webkit-transition: all 0.2s ease-in;
-    -moz-transition: all 0.2s ease-in;
+    a {
+      color: $white;
+      text-decoration: none;
+      transition: all 0.2s ease-in;
+      -webkit-transition: all 0.2s ease-in;
+      -moz-transition: all 0.2s ease-in;
 
-    &:hover {
-      font-weight: 600;
-      font-size: $medium;
+      &:hover {
+        font-weight: 600;
+        font-size: $normal;
+      }
     }
   }
 }
+
+main {
+  padding: 10rem 15rem;
+
+  header {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    h2 {
+      color: $white;
+    }
+  }
+
+  section {
+    clear: both;
+  }
+
+  #about-me {
+    .container {
+      float: right;
+      width: 75%;
+
+      article{
+        margin-bottom: 0.5rem;
+
+        &.dropdown{
+
+          header {
+            text-align: left;
+            background-color: $light-black;
+            padding: 0.8rem;
+            margin-bottom: 0;
+            border-radius: 0.2rem;
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+
+            h3 {
+              color: $white;
+              text-transform: uppercase;
+              text-align: center;
+              width: 100%;
+              cursor: pointer;
+            }
+
+            i{
+              font-size: $small;
+              color: $white;
+            }
+
+            &:hover{
+              i{
+                animation-name: bounce;
+                animation-duration: 1s;
+                animation-fill-mode: both;
+                animation-timing-function: ease-in-out;
+                -moz-animation-name: bounce;
+                -moz-animation-duration: 1s;;
+                -moz-animation-timing-function: ease-in-out; 
+                -webkit-animation-name: bounce;
+                -webkit-animation-duration: 1s;
+                -webkit-animation-fill-mode: both;
+                -webkit-animation-timing-function: ease-in-out;
+              }
+            }
+          }
+
+          .container-wrapper {
+            display: none;
+            background-color: $white;
+            color: $light-black;
+            padding: 1rem 0;
+            border-bottom-left-radius: 0.2rem;
+            border-bottom-right-radius: 0.2rem;     
+
+            ul.item{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 0.8rem 2rem;
+
+              & .left-side{
+                width: 18%;
+                li{
+                  &.logo{
+                    margin-right: 1rem;
+                    padding: 0.3rem;
+                    img{
+                      width: 100%;
+                      border-radius: 50%;
+                      border: 0.08rem solid $dark-black;
+                    }
+                  }
+                }
+              }
+
+              & .right-side{
+                width: 100%;
+                li{
+                  padding: 0.3rem;
+                  &.date{
+                    font-weight: 600;
+                    font-size: $x-small;
+                    display: block;
+                  }
+                  &.title{
+                    font-size: $small;
+                    font-style: italic;
+                    font-weight: 700;
+                  }
+                  &.location{
+                    font-size: $small;
+                  }
+                  &.tasks {
+                    margin-left: 1rem;
+                    li {
+                      padding: 0.5rem;
+                      line-height: 1.5rem;
+
+                      i {
+                        margin-right: 0.5rem;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          &#personal-details{
+            ul.item{
+              display: flex;
+              justify-content: space-between;
+              li{
+                font-size: $x-small;
+                &:first-child{
+                  font-weight: 700;
+                  font-size: $small;
+                  font-style: italic;
+                }
+              }
+              
+            }
+          }
+
+          &#skills, &#languages{
+            ul.item {
+              display: block;
+
+              li{
+                padding-top: 0.3rem;
+                margin-left: 1rem;
+                font-size: $x-small;
+                line-height: 1.5rem;
+
+                &:first-child {
+                  margin-left: 0;
+                  font-weight: 700;
+                  font-size: $small;
+                  font-style: italic;
+                }
+              }
+              
+            }
+          }
+        }
+      }
+    }
+
+    #personal-picture {
+      width: 20%;  
+      img {
+        float: left;
+        width: 100%;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
