@@ -20,6 +20,7 @@ import udemy from './assets/img/icons/udemy.jpg';
 import miriadax from './assets/img/icons/miriadax.png';
 
 //js
+import navigator from './js/navigator.js';
 import dropdown from './js/dropdown.js';
 import smoothScroll from './js/smooth-scroll.js';
 

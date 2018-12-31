@@ -59,8 +59,26 @@ header#home{
     font-style: italic;
   }
 
-  nav.navigator-responsive, div#navigator-resposive-submenu {
+  nav.navigator-responsive{
     display: none;
+    opacity: 0.9;
+
+    div#navigator-resposive-submenu{
+      width: 100%;
+      text-align: left;
+      background-color: $light-black;
+      opacity: 1;
+    
+      ul{
+        li{
+          padding: 2rem 0.5rem;
+          a{
+            color: $white;
+            text-decoration: none;
+          }
+        }
+      }
+    }
   }
 
   nav.navigator {
