@@ -12,15 +12,17 @@ html(lang="en")
     title Sabrina's Portfolio
 
     body
-      nav.navigator#home
-        include ./templates/navigator.pug
+      header#home
+        img.pic(src="./assets/img/personal_pic.jpg" alt="personal_picture")
+        h1 Sabrina Fernández Zambrano
+        p Full Stack Web Developer
+        nav.navigator
+          include ./templates/navigator.pug
       main
         //- About me
         section#about-me
           header
             h2 About Me
-          article#personal-picture
-            img.pic(src="./assets/img/personal_pic.jpg" alt="personal_picture")
           .container
             article.dropdown#personal-details
               include ./templates/about-me/personal-details.pug

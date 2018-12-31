@@ -6,6 +6,7 @@ import reset from './styles/reset.scss';
 import style from './styles/style.scss';
 
 // assets
+import background from './assets/img/background.jpg';
 import favicon from './assets/img/favicon.ico';
 import profile from './assets/img/personal_pic.jpg';
 import github from './assets/img/icons/github.svg';

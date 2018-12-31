@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+html, body{
+  height: 100%;
+  min-height: 100%;
+}
+
 body {
   background-color: $dark-black;
   font-family: 'Raleway', sans-serif;
@@ -23,44 +28,76 @@ h3, p, a {
   font-size: $small;
 }
 
-nav.navigator {
-
-  color: $white;
-  position: fixed;
-  width: 100%;
-  padding: 1rem;
-  background-color: $light-black;
+header#home{
+  background-size: cover;
+  height: 100vh;
+  background: url('../assets/img/background.jpg');
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  color: $white;
+
   
-  h1 {
-    cursor: default;
-    font-size: $normal;
+  img {
+    width: 10%;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+    border: 0.3 solid $dark-black;
+    -webkit-filter: grayscale(50%);
+    filter: grayscale(50%);
   }
 
-  li {
-    display: inline-block;
-    padding: 0 0.5rem;
-    height: 100%;
+  h1 {
+    font-size: 3rem;
+  }
 
-    a {
-      color: $white;
-      text-decoration: none;
-      transition: all 0.2s ease-in;
-      -webkit-transition: all 0.2s ease-in;
-      -moz-transition: all 0.2s ease-in;
+  p {
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight:800;
+    font-style: italic;
+  }
 
-      &:hover {
-        font-weight: 600;
-        font-size: $normal;
+  nav.navigator {
+    top: 0;
+    color: $white;
+    position: fixed;
+    width: 100%;
+    padding: 1rem;
+    background-color: $dark-black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    h1 {
+      cursor: default;
+      font-size: $normal;
+    }
+
+    li {
+      display: inline-block;
+      padding: 0 0.5rem;
+      height: 100%;
+
+      a {
+        color: $white;
+        text-decoration: none;
+        transition: all 0.2s ease-in;
+        -webkit-transition: all 0.2s ease-in;
+        -moz-transition: all 0.2s ease-in;
+
+        &:hover {
+          font-weight: 600;
+          font-size: $normal;
+        }
       }
     }
   }
 }
 
 main {
-  padding: 8rem 13rem;
+  padding: 2rem 10rem;
 
   header {
     text-align: center;
@@ -68,6 +105,8 @@ main {
 
     h2 {
       color: $white;
+      font-size: 1.5rem;
+      font-weight: 800;
     }
   }
 
@@ -78,8 +117,6 @@ main {
 
   #about-me {
     .container {
-      float: right;
-      width: 75%;
 
       article{
         margin-bottom: 0.5rem;
@@ -141,7 +178,7 @@ main {
               padding: 0.8rem 2rem;
 
               & .left-side{
-                width: 18%;
+                width: 15%;
                 li{
                   &.logo{
                     margin-right: 1rem;
@@ -225,15 +262,6 @@ main {
             }
           }
         }
-      }
-    }
-
-    #personal-picture {
-      width: 20%;  
-      img {
-        float: left;
-        width: 100%;
-        border-radius: 50%;
       }
     }
   }
