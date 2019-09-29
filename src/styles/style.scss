@@ -229,7 +229,6 @@ main {
                   }
                   &.title{
                     font-size: $small;
-                    font-style: italic;
                     font-weight: 700;
                   }
                   &.location{
@@ -251,28 +250,11 @@ main {
             }
           }
 
-          &#personal-details{
-            ul.item{
-              display: flex;
-              justify-content: space-between;
-              li{
-                font-size: $x-small;
-                &:first-child{
-                  font-weight: 700;
-                  font-size: $small;
-                  font-style: italic;
-                }
-              }
-              
-            }
-          }
-
-          &#skills, &#languages{
+          &#personal-details, &#skills, &#languages{
             ul.item {
               display: block;
               li{
                 padding-top: 0.3rem;
-                margin-left: 1rem;
                 font-size: $x-small;
                 line-height: 1.5rem;
 
@@ -280,7 +262,6 @@ main {
                   margin-left: 0;
                   font-weight: 700;
                   font-size: $small;
-                  font-style: italic;
                 }
               }
               
