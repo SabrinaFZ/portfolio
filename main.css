@@ -319,7 +319,6 @@ footer {
       display: block;
       justify-content: unset; }
       main #about-me .container article.dropdown#personal-details ul.item li {
-        margin-left: 1rem;
         line-height: 1.5rem; }
         main #about-me .container article.dropdown#personal-details ul.item li:first-child {
           margin-left: 0; }
@@ -387,7 +386,6 @@ footer {
       display: block;
       justify-content: unset; }
       main #about-me .container article.dropdown#personal-details ul.item li {
-        margin-left: 1rem;
         line-height: 2rem;
         font-size: 1.4rem; }
         main #about-me .container article.dropdown#personal-details ul.item li:first-child {
