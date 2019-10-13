@@ -232,7 +232,6 @@ main {
               display: block; }
             main #about-me .container article.dropdown .container-wrapper ul.item .right-side li.title {
               font-size: 1.2rem;
-              font-style: italic;
               font-weight: 700; }
             main #about-me .container article.dropdown .container-wrapper ul.item .right-side li.location {
               font-size: 1.2rem; }
@@ -243,27 +242,16 @@ main {
                 line-height: 1.5rem; }
                 main #about-me .container article.dropdown .container-wrapper ul.item .right-side li.tasks li i {
                   margin-right: 0.5rem; }
-    main #about-me .container article.dropdown#personal-details ul.item {
-      display: flex;
-      justify-content: space-between; }
-      main #about-me .container article.dropdown#personal-details ul.item li {
-        font-size: 1rem; }
-        main #about-me .container article.dropdown#personal-details ul.item li:first-child {
-          font-weight: 700;
-          font-size: 1.2rem;
-          font-style: italic; }
-    main #about-me .container article.dropdown#skills ul.item, main #about-me .container article.dropdown#languages ul.item {
+    main #about-me .container article.dropdown#personal-details ul.item, main #about-me .container article.dropdown#skills ul.item, main #about-me .container article.dropdown#languages ul.item {
       display: block; }
-      main #about-me .container article.dropdown#skills ul.item li, main #about-me .container article.dropdown#languages ul.item li {
+      main #about-me .container article.dropdown#personal-details ul.item li, main #about-me .container article.dropdown#skills ul.item li, main #about-me .container article.dropdown#languages ul.item li {
         padding-top: 0.3rem;
-        margin-left: 1rem;
         font-size: 1rem;
         line-height: 1.5rem; }
-        main #about-me .container article.dropdown#skills ul.item li:first-child, main #about-me .container article.dropdown#languages ul.item li:first-child {
+        main #about-me .container article.dropdown#personal-details ul.item li:first-child, main #about-me .container article.dropdown#skills ul.item li:first-child, main #about-me .container article.dropdown#languages ul.item li:first-child {
           margin-left: 0;
           font-weight: 700;
-          font-size: 1.2rem;
-          font-style: italic; }
+          font-size: 1.2rem; }
   main #contact ul {
     display: flex;
     justify-content: space-around;
@@ -331,7 +319,6 @@ footer {
       display: block;
       justify-content: unset; }
       main #about-me .container article.dropdown#personal-details ul.item li {
-        margin-left: 1rem;
         line-height: 1.5rem; }
         main #about-me .container article.dropdown#personal-details ul.item li:first-child {
           margin-left: 0; }
@@ -399,7 +386,6 @@ footer {
       display: block;
       justify-content: unset; }
       main #about-me .container article.dropdown#personal-details ul.item li {
-        margin-left: 1rem;
         line-height: 2rem;
         font-size: 1.4rem; }
         main #about-me .container article.dropdown#personal-details ul.item li:first-child {
