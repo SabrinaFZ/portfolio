@@ -1,0 +1,11 @@
+@import '../../styles/partials/variables';
+@import '../../styles/partials/mixins';
+
+.card {
+  border-radius: 0.2em;
+  box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.3);
+  padding: 1em;
+  @include mobile {
+    padding: 0.8em;
+  }
+}

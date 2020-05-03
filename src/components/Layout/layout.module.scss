@@ -1,0 +1,11 @@
+@import '../../styles/partials/mixins';
+
+.main {
+  margin-left: 10%;
+  margin-right: 5%;
+  padding-top: 2%;
+  @include mobile {
+    margin-bottom: 20%;
+    margin-left: 5%;
+  }
+}
