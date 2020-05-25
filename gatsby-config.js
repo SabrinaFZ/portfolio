@@ -1,9 +1,10 @@
 module.exports = {
-  pathPrefix: "/portfolio",
+  pathPrefix: `/portfolio`,
   siteMetadata: {
     title: `Sabrina's Portfolio`,
-    description: `Personal website with information, projects and contact details.`,
-    author: `@SabrinaFZ`
+    description: `Personal website with information, projects and contact details`,
+    author: `@SabrinaFZ`,
+    keywords: `Sabrina Fernández Zambrano, Front-end Developer, Spain`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

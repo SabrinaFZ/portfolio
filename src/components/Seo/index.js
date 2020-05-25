@@ -14,6 +14,7 @@ function SEO({
             title
             description
             author
+            keywords
           }
         }
       }
@@ -45,6 +46,10 @@ function SEO({
         {
           property: 'og:type',
           content: 'website'
+        },
+        {
+          name: 'keywords',
+          content: site.siteMetadata.keywords
         }
       ].concat(meta)}
     >
