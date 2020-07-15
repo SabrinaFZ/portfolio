@@ -6,7 +6,7 @@ export default [
     role: 'Front-end Developer',
     location: 'Madrid, Spain',
     tasks: [
-      'Resposible for new developments using technologies such as '
+      'Responsible for new developments using technologies such as '
       + 'Vue, Vuex, CSS, HTML, Javascript, Sass, '
       + 'Git, Azure',
       'Application maintenance'
@@ -19,7 +19,7 @@ export default [
     role: 'Front-end Developer',
     location: 'Madrid, Spain',
     tasks: [
-      'Resposible for new developments using technologies such as '
+      'Responsible for new developments using technologies such as '
         + 'Vue, Vuex, Backbone, Marionette, CSS, HTML, Jenkins, Javascript, '
         + 'jQuery, Dust, Stylus, Git, Java, Azure',
       'Unit Testing with Mocha, Chai and Sinon',
@@ -37,7 +37,7 @@ export default [
       'Responsible for implementing their web application using HTML5, CSS3, SASS, AngularJS,'
       + 'Javascript, Jade, Jquery, Coffeescript, Django, Python',
       'Application maintenance',
-      'Testing',
+      'Cross-browser Testing',
       'Team work using agile methodologies'
     ]
   }

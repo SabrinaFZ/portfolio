@@ -24,6 +24,13 @@ export default [
     icon: faGithub
   },
   {
+    id: 'project',
+    title: 'UMadGame',
+    content: 'Its a similar game of the famous draught',
+    url: 'https://sabrinafz.github.io/UMadGame/',
+    icon: faGithub
+  },
+  {
     id: 'project-4',
     title: 'Final-Year Project',
     content: 'A cross platform mobile application to sell train tickets with React Native and Redux',
