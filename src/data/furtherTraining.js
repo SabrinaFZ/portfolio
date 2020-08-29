@@ -12,6 +12,11 @@ export default [
   {
     id: 'further-training',
     school: 'Platzi',
+    course: 'Testing with Vue.js'
+  },
+  {
+    id: 'further-training',
+    school: 'Platzi',
     course: 'Java SE POO Online Course'
   },
   {

@@ -22,15 +22,12 @@ import JEST from '../images/jest.png';
 
 import SQL from '../images/sql.png';
 import MYSQL from '../images/mysql.png';
-import POSTGRESQL from '../images/postgresql.png';
 import MONGO from '../images/mongo.png';
 
 import WINDOWS from '../images/windows.png';
 import LINUX from '../images/linux.png';
 
 import GIT from '../images/git.png';
-import GITHUB from '../images/github.png';
-import GITLAB from '../images/gitlab.png';
 
 import JENKINS from '../images/jenkins.png';
 
@@ -146,10 +143,6 @@ export default [
         img: MYSQL
       },
       {
-        title: 'PostgreSQL',
-        img: POSTGRESQL
-      },
-      {
         title: 'MongoDB',
         img: MONGO
       }
@@ -176,14 +169,6 @@ export default [
       {
         title: 'Git',
         img: GIT
-      },
-      {
-        title: 'Github',
-        img: GITHUB
-      },
-      {
-        title: 'Gitlab',
-        img: GITLAB
       }
     ]
   },
