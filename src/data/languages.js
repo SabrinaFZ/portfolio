@@ -21,7 +21,7 @@ export default [
     id: 'language',
     img: GERMANY,
     language: 'German',
-    level: 'Beginner Level (A1)',
+    level: 'Beginner Level (A2)',
     description: 'At present, I am studying at the Goethe Institut of Madrid'
   }
 ];
