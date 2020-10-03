@@ -1,8 +1,13 @@
 export default [
   {
     id: 'further-training',
+    school: 'Udemy',
+    course: 'Spring & Hibernate for Beginners Online Course'
+  },
+  {
+    id: 'further-training',
     school: 'Platzi',
-    course: 'Testing with Vue.js'
+    course: 'Testing with Vue.js Online Course'
   },
   {
     id: 'further-training',
