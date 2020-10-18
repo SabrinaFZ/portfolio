@@ -1,7 +1,7 @@
 export default [
   {
     id: 'work-experience',
-    date: '04/2020 - Present',
+    date: '04/2020 - 09/2020',
     company: 'Con&Sel15',
     role: 'Front-end Developer',
     location: 'Madrid, Spain',
