@@ -5,7 +5,7 @@ import styles from './header.module.scss';
 const Header = () => (
   <header className={styles.header}>
     <h1>Sabrina Fernández Zambrano</h1>
-    <h2>Front-end Developer</h2>
+    <h2>Full Stack Developer</h2>
     <h3><span role="img" aria-label="location">📍</span>Madrid, Spain</h3>
   </header>
 );
