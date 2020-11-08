@@ -1,6 +1,11 @@
 export default [
   {
     id: 'further-training',
+    school: 'Platzi',
+    course: 'Docker Online Course'
+  },
+  {
+    id: 'further-training',
     school: 'Udemy',
     course: 'Spring & Hibernate for Beginners Online Course'
   },
