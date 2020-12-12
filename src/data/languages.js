@@ -14,7 +14,7 @@ export default [
     id: 'language',
     img: UK,
     language: 'English',
-    level: 'High-Intermediate Level (C1)',
+    level: 'Advanced Level (C1)',
     description: 'Certificated with Advanced Certificate in English by the Cambridge University'
   },
   {
