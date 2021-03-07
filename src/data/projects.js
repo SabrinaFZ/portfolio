@@ -18,6 +18,13 @@ export default [
   },
   {
     id: 'project',
+    title: 'iwatchseries-api',
+    content: 'API for iwatchseries made with Node.js, MongoDB and Docker',
+    url: 'https://github.com/SabrinaFZ/iwatchseries-api',
+    icon: faGithub
+  },
+  {
+    id: 'project',
     title: 'spring-tasklist-manager-api',
     content: 'A Task Manager API with Spring Boot & Hibernate',
     url: 'https://github.com/SabrinaFZ/spring-tasklist-manager-api',

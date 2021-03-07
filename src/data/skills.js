@@ -30,6 +30,7 @@ import LINUX from '../images/linux.png';
 import GIT from '../images/git.png';
 
 import JENKINS from '../images/jenkins.png';
+import DOCKER from '../images/docker.png';
 
 export default [
   {
@@ -174,11 +175,15 @@ export default [
   },
   {
     id: 'skills',
-    title: 'Continuous Integration',
+    title: 'Dev&Ops',
     technologies: [
       {
         title: 'Jenkins',
         img: JENKINS
+      },
+      {
+        title: 'Docker',
+        img: DOCKER
       }
     ]
   }
