@@ -1,6 +1,19 @@
 export default [
   {
     id: 'work-experience',
+    date: '09/2020 - Current',
+    company: 'Busuu',
+    role: 'Full Stack Developer',
+    location: 'Madrid, Spain',
+    tasks: [
+      'Responsible for new developments using technologies such as '
+      + ' HTML, CSS, Javascript, React.js, Redux, Angularjs, Jest, Enzyme, Sass, PHP, Symfony, SQL, Docker, Git',
+      'Team work using agile methodologies',
+      'Application maintenance'
+    ]
+  },
+  {
+    id: 'work-experience',
     date: '04/2020 - 09/2020',
     company: 'Con&Sel15',
     role: 'Front-end Developer',
