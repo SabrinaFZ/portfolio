@@ -11,6 +11,13 @@ export default [
   },
   {
     id: 'project',
+    title: 'shopping-cart-react',
+    content: 'A Shopping Cart with React.js',
+    url: 'https://github.com/SabrinaFZ/shopping-cart-react',
+    icon: faGithub
+  },
+  {
+    id: 'project',
     title: 'iwatchseries',
     content: 'Keep track of your favorite tv series with Nuxt.js and Vue.js',
     url: 'https://github.com/SabrinaFZ/iwatchseries',
