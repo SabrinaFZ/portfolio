@@ -17,7 +17,7 @@ import Link from "@/components/atoms/Link/Link";
 const App: FC = () => {
   const getListElements = () => {
     return [
-      <NavLink to="/">
+      <NavLink to="/portfolio">
         <Icon size={Size.ExtraLarge}>
           <BriefcaseIcon />
         </Icon>
