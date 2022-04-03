@@ -1,0 +1,10 @@
+@use "../../settings/colors"as *;
+@use "../../tools/mixins" as *;
+
+.navigator {
+  box-shadow: 10px 0 8px -8px rgba(0, 0, 0, 0.2);
+
+  @include mobile {
+    background-color: $color-gray-extra-light;
+  }
+}

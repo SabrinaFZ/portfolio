@@ -1,0 +1,25 @@
+@use "../settings/fonts" as *;
+
+.h1 {
+  font-size: $font-size-x-large !important;
+}
+
+.h2 {
+  font-size: $font-size-large !important;
+}
+
+.h3 {
+  font-size: $font-size-medium !important;
+}
+
+.h4 {
+  font-size: $font-size-normal !important;
+}
+
+.h5 {
+  font-size: $font-size-small !important;
+}
+
+.h6 {
+  font-size: $font-size-x-small !important;
+}
