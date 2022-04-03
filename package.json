@@ -26,6 +26,7 @@
     "eject": "craco eject",
     "lint": "eslint .",
     "husky:install": "husky install",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
