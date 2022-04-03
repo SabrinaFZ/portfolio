@@ -1,0 +1,40 @@
+@use "../../settings/fonts" as *;
+
+.icon {
+  &--x-small {
+    svg {
+      width: $font-size-x-small;
+      height: $font-size-x-small;
+    }
+  }
+  &--small {
+    svg {
+      width: $font-size-small;
+      height: $font-size-small;
+    }
+  }
+  &--normal {
+    svg {
+      width: $font-size-normal;
+      height: $font-size-normal;
+    }
+  }
+  &--medium {
+    svg {
+      width: $font-size-medium;
+      height: $font-size-medium;
+    }
+  }
+  &--large {
+    svg {
+      width: $font-size-large;
+      height: $font-size-large;
+    }
+  }
+  &--x-large {
+    svg {
+      width: $font-size-x-large;
+      height: $font-size-x-large;
+    }
+  }
+}

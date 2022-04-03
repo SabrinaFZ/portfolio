@@ -1,0 +1,32 @@
+@use "../tools/animations"as *;
+@use "../tools/mixins"as *;
+
+#root {
+  .navigator {
+    .list {
+      animation-duration: 2s;
+      animation-name: slideInUp;
+
+      &__item {
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    
+      &__item:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    
+      @include mobile {
+        animation: none;
+        animation-duration: 0s;
+        flex-direction: row;
+        bottom: 0;
+        flex-direction: row;
+        justify-content: space-around;
+        position: absolute;
+        width: 100%;
+      }
+    }
+  }
+}
