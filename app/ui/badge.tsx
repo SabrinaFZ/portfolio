@@ -1,3 +1,3 @@
-export function Badge({text}: {text: string}) {
-  return <span className="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-neutral-600 ring-1 ring-inset ring-gray-500/10">{text}</span>
+export function Badge({content}: {content: string | React.ReactNode}) {
+  return <span className="inline-flex items-center rounded-md bg-gray-300 px-2 py-1 text-slate-950 ring-1 ring-inset ring-slate-600">{content}</span>
 }
