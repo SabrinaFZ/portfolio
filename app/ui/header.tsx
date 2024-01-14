@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import AnimatedArrow from './arrow/arrow'
+import AnimatedArrow from './arrow'
 
 export function Header() {
   return (
