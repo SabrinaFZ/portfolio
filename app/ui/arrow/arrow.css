@@ -1,0 +1,27 @@
+/* styles.css or your component file */
+
+.arrow-container {
+  position: absolute;
+  bottom: 30px;
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 30px solid white; /* Set the color to white */
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(15px); /* Adjust translateY for down direction */
+  }
+  60% {
+    transform: translateY(7px);
+  }
+}

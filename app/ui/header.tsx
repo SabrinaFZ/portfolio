@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import AnimatedArrow from './arrow/arrow'
 
 export function Header() {
   return (
@@ -42,6 +43,7 @@ export function Header() {
           />
         </Link>
         </div>
+        <AnimatedArrow />
     </header>
   )
 }
