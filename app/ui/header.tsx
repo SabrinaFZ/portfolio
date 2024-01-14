@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import AnimatedArrow from './arrow'
+import Arrow from './arrow'
 
 export function Header() {
   return (
-    <header className='text-center mb-10 h-screen bg-gradient-to-b from-slate-950 to-slate-800 flex justify-center items-center flex-col rounded-md p-4'>
+    <header className='text-center mb-10 h-screen bg-gradient-to-b from-slate-900 to-slate-800 flex justify-center items-center flex-col rounded-md p-4'>
       <div className='flex items-center justify-center mb-4'>
         <Image
           className='border-slate-600 border-2 rounded-full'
@@ -43,7 +43,7 @@ export function Header() {
           />
         </Link>
         </div>
-        <AnimatedArrow />
+        <Arrow />
     </header>
   )
 }
