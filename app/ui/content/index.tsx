@@ -6,7 +6,7 @@ import Skills from "./skills";
 
 export default function Content() {
   return (
-    <div className="px-4 md:px-12 flex flex-col gap-12">
+    <div id="content" className="px-4 md:px-12 flex flex-col gap-12">
       <AboutMe />
       <Experience />
       <Education />
