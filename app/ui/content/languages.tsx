@@ -2,6 +2,7 @@ import { Badge } from "../badge";
 import Image from "next/image";
 import Section from "../section";
 import LANGUAGES from "@/app/data/languages";
+import { buildImageUrl } from "@/app/utils/image";
 
 export default function Languages() {
   return (
@@ -14,7 +15,7 @@ export default function Languages() {
               <>
                 <Image
                   className="mr-1"
-                  src={language.imagePath}
+                  src={buildImageUrl(language.imagePath)}
                   width={25}
                   height={25}
                   alt={language.name}
