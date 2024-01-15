@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     default: "Home | Portfolio",
   },
   description: "Sabrina Fernandez Zambrano portfolio",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
