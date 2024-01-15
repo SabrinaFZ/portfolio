@@ -6,8 +6,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: isProduction ? process.env.BASE_PATH : undefined,
-  assetPrefix: isProduction ? process.env.NEXT_PUBLIC_BASE_PATH : undefined,
+  basePath: isProduction ? process.env.NEXT_PUBLIC_BASE_PATH : undefined,
+  assetPrefix: isProduction ? process.env.NEXT_PUBLIC_ASSET_PREFIX : undefined,
 }
 
 module.exports = nextConfig
