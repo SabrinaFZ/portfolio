@@ -7,7 +7,7 @@ const nextConfig = {
     unoptimized: true,
   },
   basePath: isProduction ? process.env.BASE_PATH : undefined,
-  assetPrefix: isProduction ? process.env.ASSET_PREFIX : undefined,
+  assetPrefix: isProduction ? process.env.NEXT_PUBLIC_BASE_PATH : undefined,
 }
 
 module.exports = nextConfig
