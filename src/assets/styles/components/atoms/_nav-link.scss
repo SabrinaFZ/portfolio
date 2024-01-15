@@ -1,8 +1,0 @@
-@use "../../settings/colors"as *;
-
-.nav-link {
-  text-decoration: none;
-  &--active {
-    fill: $color-gray;
-  }
-}
