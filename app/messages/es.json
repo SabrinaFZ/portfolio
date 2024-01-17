@@ -1,0 +1,61 @@
+{
+    "Header": {
+        "name": "Sabrina Fernández Zambrano",
+        "role": "Ingeniera Informática | Desarrolladora Frontend",
+        "location": "Madrid, España"
+    },
+    "AboutMe": {
+        "title": "Sobre mí",
+        "description": "¡Hola! 👋🏻 Soy Ingeniera Informática con experiencia como Desarrolladora Web, especializada en tecnologías tanto de frontend como de backend. Además, defiendo firmemente la <b>sensiblización sobre la salud mental</b>."
+    },
+    "Experience": {
+        "title": "Experiencia",
+        "At present": "Actualmente",
+        "Busuu": {
+            "company": "Busuu",
+            "role": "Desarrolladora Full Stack"
+        },
+        "Con&Sel15": {
+            "company": "Con&Sel15",
+            "role": "Desarrolladora Frontend"
+        },
+        "Amaris": {
+            "company": "Amaris",
+            "role": "Desarrolladora Frontend"
+        },
+        "Bridge For Billions": {
+            "company": "Bridge For Billions",
+            "role": "Becaria en Desarrollo Frontend"
+        }            
+    },
+    "Education": {
+        "title": "Educación",
+        "KeepCoding": {
+            "school": "KeepCoding",
+            "study": "Bootcamp de Desarrollo Full Stack Web"
+        },
+        "Technical University of Madrid": {
+            "school": "Universidad Politécnica de Madrid",
+            "study": "Grado en Ingeniería Informática"
+        }
+    },
+    "Skills": {
+        "title": "Habilidades",
+        "Frontend": "Frontend",
+        "Backend": "Backend",
+        "Testing": "Testing",
+        "Databases": "Bases de Datos",
+        "DevOps": "DevOps"
+    },
+    "Languages": {
+        "title": "Idiomas",
+        "Spanish": "Español",
+        "English": "Inglés",
+        "German": "Alemán",
+        "Levels": {
+            "Native": "Nativo",
+            "A2": "A2",
+            "C1": "C1"
+        }
+    }
+}
