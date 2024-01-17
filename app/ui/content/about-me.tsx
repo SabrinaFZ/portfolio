@@ -1,13 +1,18 @@
+"use client";
+import { useTranslations } from "next-intl";
+import DOMPurify from "isomorphic-dompurify";
 import Section from "../section";
 
 export default function AboutMe() {
+  const t = useTranslations("AboutMe");
+
   return (
-    <Section title="About me">
-      <p>
-        Hello! 👋🏻 I am a Computer Engineer with experience as a Web Developer,
-        specializing in both frontend and backend technologies. In addition, I
-        am a strong advocate for <b>mental health awareness</b>.
-      </p>
+    <Section title={t("title")}>
+      <p
+        dangerouslySetInnerHTML={{
+          __html: DOMPurify.sanitize(t.raw("description")),
+        }}
+      />
     </Section>
   );
 }

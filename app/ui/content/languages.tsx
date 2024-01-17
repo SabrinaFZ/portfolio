@@ -1,3 +1,5 @@
+"use client";
+import { useTranslations } from "next-intl";
 import { Badge } from "../badge";
 import Image from "next/image";
 import Section from "../section";
@@ -5,8 +7,9 @@ import LANGUAGES from "@/app/data/languages";
 import { buildImageUrl } from "@/app/utils/image";
 
 export default function Languages() {
+  const t = useTranslations("Languages");
   return (
-    <Section title="Languages">
+    <Section title={t("title")}>
       <section className="flex flex-wrap gap-1">
         {LANGUAGES.map((language) => (
           <Badge
@@ -18,9 +21,11 @@ export default function Languages() {
                   src={buildImageUrl(language.imagePath)}
                   width={25}
                   height={25}
-                  alt={language.name}
+                  alt={t(language.name)}
                 />
-                <span>{language.name}</span>
+                <span>
+                  {t(language.name)} ({t(`Levels.${language.level}`)})
+                </span>
               </>
             }
           />

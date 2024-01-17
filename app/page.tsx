@@ -1,11 +1,5 @@
-import Content from "./ui/content";
-import { Header } from "./ui/header";
+import { redirect } from "next/navigation";
 
-export default function Home() {
-  return (
-    <main>
-      <Header />
-      <Content />
-    </main>
-  );
+export default function RootPage() {
+  redirect("/en");
 }
