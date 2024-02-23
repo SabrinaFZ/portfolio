@@ -10,7 +10,7 @@ const EDUCATION: {
   },
   {
     school: "Technical University of Madrid",
-    startDate: "01/2017",
+    startDate: "01/2011",
     endDate: "01/2018",
   },
 ];
