@@ -20,7 +20,7 @@ const EXPERIENCE: {
   },
   {
     company: "Bridge For Billions",
-    startDate: "01/2018",
+    startDate: "01/2017",
     endDate: "11/2017",
   },
 ];
