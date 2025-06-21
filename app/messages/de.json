@@ -1,61 +1,61 @@
 {
-    "Header": {
-        "name": "Sabrina Fernández Zambrano",
-        "role": "Informatikingeniurin | Frontend-Entwicklerin",
-        "location": "Madrid, Spanien"
+  "Header": {
+    "name": "Sabrina Fernández Zambrano",
+    "role": "Informatikingeniurin | Full Stack-Entwicklerin",
+    "location": "Madrid, Spanien"
+  },
+  "AboutMe": {
+    "title": "Über mich",
+    "description": "Hallo! 👋🏻 Ich bin ein Informatikingeniurin mit Erfahrung als Web-Entwicklerin, spezialisiert auf Frontend- und Backend-Technologies. Außerdem setze ich mich stark für <b> das Bewusstsein für psychische Gesundheit</b> ein."
+  },
+  "Experience": {
+    "title": "Erfahrung",
+    "At present": "Zurzeit",
+    "Busuu": {
+      "company": "Busuu",
+      "role": "Full Stack-Entwicklerin"
     },
-    "AboutMe": {
-        "title": "Über mich",
-        "description": "Hallo! 👋🏻 Ich bin ein Informatikingeniurin mit Erfahrung als Web-Entwicklerin, spezialisiert auf Frontend- und Backend-Technologies. Außerdem setze ich mich stark für <b> das Bewusstsein für psychische Gesundheit</b> ein."
+    "Con&Sel15": {
+      "company": "Con&Sel15",
+      "role": "Frontend-Entwicklerin"
     },
-    "Experience": {
-        "title": "Erfahrung",
-        "At present": "Zurzeit",
-        "Busuu": {
-            "company": "Busuu",
-            "role": "Full Stack-Entwicklerin"
-        },
-        "Con&Sel15": {
-            "company": "Con&Sel15",
-            "role": "Frontend-Entwicklerin"
-        },
-        "Amaris": {
-            "company": "Amaris",
-            "role": "Frontend Developer-Entwicklerin"
-        },
-        "Bridge For Billions": {
-            "company": "Bridge For Billions",
-            "role": "Praktikantin für Frontend-Entwicklung"
-        }            
+    "Amaris": {
+      "company": "Amaris",
+      "role": "Frontend Developer-Entwicklerin"
     },
-    "Education": {
-        "title": "Bildung",
-        "KeepCoding": {
-            "school": "KeepCoding",
-            "study": "Full Stack Web-Entwickler Bootcamp"
-        },
-        "Technical University of Madrid": {
-            "school": "Technische Universität Madrid",
-            "study": "Bachelor-Abschluss in Informatikingenieurwesen"
-        }
-    },
-    "Skills": {
-        "title": "Fähigkeiten",
-        "Frontend": "Frontend",
-        "Backend": "Backend",
-        "Testing": "Testen",
-        "Databases": "Datenbanken",
-        "DevOps": "DevOps"
-    },
-    "Languages": {
-        "title": "Sprachen",
-        "Spanish": "Spanisch",
-        "English": "Englisch",
-        "German": "Deutsch",
-        "Levels": {
-            "Native": "Muttersprache",
-            "A2": "A2",
-            "C1": "C1"
-        }
+    "Bridge For Billions": {
+      "company": "Bridge For Billions",
+      "role": "Praktikantin für Frontend-Entwicklung"
     }
+  },
+  "Education": {
+    "title": "Bildung",
+    "KeepCoding": {
+      "school": "KeepCoding",
+      "study": "Full Stack Web-Entwickler Bootcamp"
+    },
+    "Technical University of Madrid": {
+      "school": "Technische Universität Madrid",
+      "study": "Bachelor-Abschluss in Informatikingenieurwesen"
+    }
+  },
+  "Skills": {
+    "title": "Fähigkeiten",
+    "Frontend": "Frontend",
+    "Backend": "Backend",
+    "Testing": "Testen",
+    "Databases": "Datenbanken",
+    "DevOps": "DevOps"
+  },
+  "Languages": {
+    "title": "Sprachen",
+    "Spanish": "Spanisch",
+    "English": "Englisch",
+    "German": "Deutsch",
+    "Levels": {
+      "Native": "Muttersprache",
+      "A2": "A2",
+      "C1": "C1"
+    }
+  }
 }
