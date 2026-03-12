@@ -6,7 +6,7 @@
   },
   "AboutMe": {
     "title": "Sobre mí",
-    "description": "¡Hola! 👋🏻 Soy Ingeniera Informática con experiencia como Desarrolladora Web, especializada en tecnologías tanto de frontend como de backend. Además, defiendo firmemente la <b>sensiblización sobre la salud mental</b>."
+    "description": "¡Hola! 👋🏻 Soy Ingeniera Informática con experiencia como Desarrolladora Web, Aunque trabajo con tecnologías tanto de front-end como de back-end, mi especialidad se centra en el desarrollo front-end. Además, defiendo firmemente la <b>sensiblización sobre la salud mental</b>."
   },
   "Experience": {
     "title": "Experiencia",
@@ -45,7 +45,8 @@
     "Backend": "Backend",
     "Testing": "Testing",
     "Databases": "Bases de Datos",
-    "DevOps": "DevOps"
+    "DevOps": "DevOps",
+    "AITools": "Herramientas de IA"
   },
   "Languages": {
     "title": "Idiomas",

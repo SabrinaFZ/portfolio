@@ -31,6 +31,10 @@ export const SKILLS: {
   },
   {
     name: "DevOps",
-    technologies: ["Jenkins", "Docker", "Github Actions"],
+    technologies: ["Jenkins", "Docker", "Github Actions", "Vercel"],
   },
+  {
+    name: "AITools",
+    technologies: ["GitHub Copilot", "Cursor AI", "Claude Code"],
+  }
 ];
