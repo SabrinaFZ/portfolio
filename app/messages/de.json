@@ -6,7 +6,7 @@
   },
   "AboutMe": {
     "title": "Über mich",
-    "description": "Hallo! 👋🏻 Ich bin ein Informatikingeniurin mit Erfahrung als Web-Entwicklerin, spezialisiert auf Frontend- und Backend-Technologies. Außerdem setze ich mich stark für <b> das Bewusstsein für psychische Gesundheit</b> ein."
+    "description": "Hallo! 👋🏻 Ich bin Informatikerin und arbeite als Webentwicklerin. Ich arbeite mit Front-End und Back-End, aber mein Spezialgebiet ist Front-End. Außerdem setze ich mich stark für <b> das Bewusstsein für psychische Gesundheit</b> ein."
   },
   "Experience": {
     "title": "Erfahrung",
@@ -45,7 +45,8 @@
     "Backend": "Backend",
     "Testing": "Testen",
     "Databases": "Datenbanken",
-    "DevOps": "DevOps"
+    "DevOps": "DevOps",
+    "AITools": "KI-Tools"
   },
   "Languages": {
     "title": "Sprachen",

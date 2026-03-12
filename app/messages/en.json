@@ -6,7 +6,7 @@
   },
   "AboutMe": {
     "title": "About me",
-    "description": "Hello! 👋🏻 I am a Computer Engineer with experience as a Web Developer, specializing in both frontend and backend technologies. In addition, I am a strong advocate for <b>mental health awareness</b>"
+    "description": "Hello! 👋🏻 Hello! 👋🏻 I am a Computer Engineer with experience as a Web developer. While I work with both front-end and back-end technologies, my expertise is focused on front-end development. In addition, I am a strong advocate for <b>mental health awareness</b>"
   },
   "Experience": {
     "title": "Experience",
@@ -46,7 +46,7 @@
     "Testing": "Testing",
     "Databases": "Databases",
     "DevOps": "DevOps",
-    "AI Tools": "AI Tools"
+    "AITools": "AI Tools"
   },
   "Languages": {
     "title": "Languages",
